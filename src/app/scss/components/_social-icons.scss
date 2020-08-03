@@ -1,0 +1,25 @@
+.social-icons {
+    justify-content: end;
+
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding: 0 $sp-4;  
+
+    .vrv-icon {
+        // display: block;
+        background-image: img("vrv-icon.png");
+        background-size: cover;
+        height: 25px;
+        width: 25px;
+        // padding: 1rem;
+    }
+
+    li {
+        cursor: pointer;
+
+        &:hover {
+            color: $purple-base;
+        }
+    }
+}

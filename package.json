@@ -1,0 +1,48 @@
+{
+  "name": "cartoon-hangover-clon",
+  "version": "1.0.0",
+  "description": "Un clon del sitio web oficial de Cartoon Hangover",
+  "main": "index.js",
+  "scripts": {
+    "init": "parcel src/index.html",
+    "save-dev": "npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/plugin-transform-runtime sass postcss-modules autoprefixer",
+    "save": "npm install --save @babel/runtime core-js include-media rfs",
+    "build": "parcel build ./src/index.html --out-dir public",
+    "deploy": "firebase deploy"
+  },
+  "keywords": [
+    "sass",
+    "javascript",
+    "parcel"
+  ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "ie > 9"
+        ]
+      },
+      "rfs": {}
+    }
+  },
+  "author": "Victor Alvarez <vicventum.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.11.0",
+    "core-js": "^3.6.5",
+    "include-media": "^1.4.9",
+    "rfs": "^9.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "autoprefixer": "^9.8.6",
+    "postcss-modules": "^3.2.0",
+    "sass": "^1.26.10"
+  }
+}

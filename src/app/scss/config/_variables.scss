@@ -1,0 +1,96 @@
+:root {
+    // Fuentes
+    --main-font: 'Roboto Condensed', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+    --font-size: 1.6rem;
+    --line-height: 1.6;
+    --fw-light: 300;
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    // Colores
+    --red-base: #ed2225;
+    --red-dark: rgba(237, 34, 37, 0.75);
+    --yellow-base: #fff100;
+    --yellow-dark: #fff100;
+    --purple-base: #92278f;
+    --purple-dark: rgba(146, 39, 143, 0.75);
+    --light: #fff;
+    --gray: rgb(71, 71, 71);
+    --gray-dark: rgb(44, 44, 44);
+    --dark: #000;
+    --second-dark: #111111;
+
+
+    --max-width: 1200px;
+    --header-height: 5rem;
+
+
+    --logo-width: 4rem;
+    --logo-height: 4rem;
+    --logo-spacing: .5rem;
+
+    --h1: 3.2rem;
+    --h2: 2.5rem;
+    --h3: 2.0rem;
+}
+
+// Pasando a variables de Sass
+$main-font: var(--main-font);
+$second-font: var(--second-font);
+$fw-light: var(--fw-light);
+$fw-normal: var(--fw-normal);
+$fw-bold: var(--fw-bold);
+$font-size: var(--font-size);
+$line-height: var(--line-height);
+$red-base: var(--red-base);
+$red-dark: var(--red-dark);
+$yellow-base: var(--yellow-base);
+$yellow-dark: var(--yellow-dark);
+$purple-base: var(--purple-base);
+$purple-dark: var(--purple-dark);
+$light: var(--light);
+$gray: var(--gray);
+$gray-dark: var(--gray-dark);
+$dark: var(--dark);
+$second-dark: var(--second-dark);
+$max-width: var(--max-width);
+$header-height: var(--header-height);
+$logo-width: var(--logo-width);
+$logo-height: var(--logo-height);
+$logo-spacing: var(--logo-spacing);
+
+$h1: var(--h1);
+$h2: var(--h2);
+$h3: var(--h3);
+
+$sp-1: 1rem;
+$sp-2: 2rem;
+$sp-3: 3rem;
+$sp-4: 4rem;
+$sp-5: 5rem;
+
+$spaceamounts: (1,2,3,4,5);
+
+// Breakpoints
+$breakpoints: (
+    mobile: 360px,
+    tablet: 768px,
+    laptop: 1024px,
+    desktop: 1400px
+);
+// Breakpoints
+$breakpoints: (
+  'phone': 320px,
+  'tablet': 768px,
+  'laptop': 1024px,
+  'desktop': 1400px
+) !default;
+
+// z-index
+$z-index: (
+    tooltip: 100,
+    modal: 500,
+    overlay: 750,
+    offcanvas: 1000
+);
