@@ -1,0 +1,33 @@
+// Funcion para obtener imagenes
+@function img($img) {
+    @return url('../img/#{$img}'); 
+}
+
+
+
+
+// @mixin reset-list {
+//     list-style: none;
+//     padding-left: 0;
+//     margin-top: 0;
+//     margin-bottom: 0;
+//   }
+
+@function z-index($val) {
+    @return map-get($z-index, $val);
+}
+     
+// Mixin para media querys
+@mixin mq($bp) {
+    @if map-has-key($breakpoints, $bp){
+        @media screen and (min-width: map-get($breakpoints, $bp)){
+            @content;
+        }
+    }@else {
+        @media screen and (min-width: $bp){
+            @content;
+        }
+    }
+}
+// @include mq(l){...}
+// @include mq(500px){...}

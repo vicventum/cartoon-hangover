@@ -1,0 +1,17 @@
+.banner-title {
+    color: $dark;
+    height: 12rem;
+    
+    // Propiedades de layout
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mq(laptop) {
+        height: 11rem;
+    }
+
+    &__title {
+        font-size: 4rem;
+    }
+}

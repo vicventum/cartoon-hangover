@@ -1,0 +1,43 @@
+.btn {
+    display: inline-block;
+    background-color: $dark;
+    color: $light;
+    padding: 0.4rem 1.3rem;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    outline: none;
+    transition: all 0.2s ease-in;
+
+    &.btn-dark {
+        background-color: $dark;
+        
+        &:hover {
+            background-color: $red-base;
+        }
+    }
+    &.btn-red {
+        background-color: $red-base;
+        
+        &:hover {
+            background-color: $dark;
+        }
+    }
+    &.btn-purple {
+        background-color: $purple-base;
+        color: $light;
+        
+        &:hover {
+            background-color: $red-dark;
+        }
+    }
+
+   
+
+    // hover para los botones normales
+    &:hover {
+        // background-color: lighten($dark-color, 20%);
+        color: #fff;
+    }
+}

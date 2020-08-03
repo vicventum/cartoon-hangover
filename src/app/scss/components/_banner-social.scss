@@ -1,0 +1,31 @@
+.banner-social {
+    color: $dark;
+    height: 11rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    // Propiedades de layout
+    align-items: center;
+
+    @include mq(laptop) {
+        height: 9rem;
+    }
+
+    &__title {
+        justify-self: center;
+        text-align: center;
+        font-size: $h1;
+        min-width: 500px;
+
+        @include mq(laptop) {
+            justify-self: start;
+        }
+    }
+
+    &__box-icons {
+        text-align: center;
+        justify-self: center;   
+
+        @include mq(laptop) {
+            justify-self: end;
+        }
+    }
+}

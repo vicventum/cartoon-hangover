@@ -1,0 +1,67 @@
+.main-menu {
+    padding: $sp-2 $sp-4;
+    
+ 
+    .main-logo {
+        display: block;
+        width: 140px;
+        height: 65px;
+        
+        
+        background: img('logo-menu.png') no-repeat top;
+        background-size: cover;
+
+        margin-top: -$sp-1;
+
+        @include mq(tablet) {
+            width: 256px;
+            height: 119px;
+            
+        }
+    }
+
+
+
+    .main-nav {
+        grid-column: 5 / 13;
+        display: none;
+
+        @include mq(tablet){ 
+            display: block;
+            font-size: 2rem;
+        }
+        @include mq(laptop){ 
+            display: block;
+            font-size: 3.0rem;
+        }
+        
+        &__both {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        &__top {
+            margin-bottom: $sp-1 - 0.5;
+            
+            li {
+                font-weight: $fw-bold;
+                
+            }
+        }   
+
+        &__bottom {
+            font-weight: bold;
+            margin-left: $sp-4;
+
+            @include mq(tablet){ 
+                font-size: 1.5rem;
+            }
+            @include mq(laptop){
+                font-size: 2rem;
+            }   
+        }
+    }
+
+    
+}

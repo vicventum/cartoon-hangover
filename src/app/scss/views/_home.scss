@@ -1,0 +1,75 @@
+.shows-home{
+    padding: $sp-4 $sp-3;
+
+    .galery-home {
+        grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+        margin-bottom: $sp-4;
+        gap: $sp-3;
+    }
+    .galery-poster {
+        a {
+            font-weight: $fw-light;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+
+        &__line::after {
+            content: '';
+            display: block;
+            height: 3px;
+            background-color: $red-base;
+            margin-top: $sp-1;
+        }
+    }
+
+    .shows-btn {
+        display: flex;
+        justify-content: center;
+        
+        a {
+            padding: $sp-1 $sp-2;
+        }
+    }
+}
+
+// Galery of Merchandise
+.merchandise {
+    padding: $sp-4 $sp-3;
+
+    &__title {
+        font-size: 3.5rem;
+        &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 21.3rem;
+            background-color: $light;
+            margin-top: $sp-1;
+        }
+    }
+
+    &__poster {
+        @extend .galery-home;
+    }
+
+    .galery-merchandise {
+        text-align: center;
+        margin-bottom: $sp-4;
+
+        &__title {
+            font-size: 3rem;
+        }
+        &__desc {
+            font-size: 2rem;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        
+        a {
+            padding: $sp-1 $sp-2;
+        }
+    }
+}

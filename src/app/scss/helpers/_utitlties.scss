@@ -1,0 +1,74 @@
+.u {
+    
+    // Responsive Grid 
+    &-responsiveGrid {
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+        
+    // Resposive Flexbox
+    &-responsiveFlex {
+        display: flex;
+        flex-wrap: wrap;
+    
+        & > * {
+            flex: 1 1 200px;
+        }
+    }
+    
+
+
+    &-round-img {
+        border-radius: 50%;
+    }
+    &-center-text {
+        text-align: center;
+    }
+    &-line {
+        height: 3px;
+        width: 30%;
+        background-color: #ccc;
+        margin: 4rem auto;
+    }
+
+
+    // Backgrounds  
+    &-bg {
+        &--yellow {
+            background-color: $yellow-base;
+        }
+        &--dark {
+            background-color: $dark;
+        }
+        &--light {
+            background-color: $light;
+        }
+        &--red {
+            background-color: $red-base;
+        }
+        &--purple {
+            background-color: $purple-base;
+        }   
+    }
+    
+    // Visibility
+    &-none { display: none; }
+    &-invisible { overflow: hidden; }
+
+    &-hide-for-mobile {
+        // Hide for tablet and mobile
+        // @include breakpoint-down(medium) {
+        //     display: none!important;
+        // }
+    }
+    &-hide-for-desktop {
+        // Hide for desktop viewport widths
+        // @include breakpoint-up(large) {
+        //     display: none!important;
+        // }
+    }
+    
+    
+    
+}

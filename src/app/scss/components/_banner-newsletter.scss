@@ -1,0 +1,62 @@
+.banner-newsletter {
+    padding: 2rem 2rem; 
+    height: 40rem;
+    align-items: center;
+    justify-content: center;
+
+    @include mq(tablet) {
+        height: 25rem;
+    }
+
+    .newsletter {
+        text-align: center;
+        flex-basis: 100%;
+
+        @include mq(tablet) {
+            flex-basis: 50%;
+        }
+
+        p {
+            font-weight: $fw-light;
+            margin-bottom: $sp-2;
+            color: rgba(255, 255, 255, 0.466);
+        }
+
+        &__form {
+            display: flex;
+            
+        }
+        &__camp {
+            width: 80%;
+            border-top-left-radius: 34px;
+            border-bottom-left-radius: 34px;
+            padding: $sp-1 + .5;
+            border: none;
+        }
+        &__button {
+            width: 20%;
+            border-top-right-radius: 34px;
+            border-bottom-right-radius: 34px;
+        }
+    }
+
+    .follow {
+        text-align: center;
+        justify-content: center;
+
+        flex-basis: 100%;
+
+        @include mq(tablet) {
+            flex-basis: 50%;
+        }
+        h2 {
+            margin-bottom: $sp-4;
+        }
+        .icon-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        
+    }
+}
