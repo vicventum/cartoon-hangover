@@ -1,64 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- FONT AWESOME -->
-    <script
-      src="https://kit.fontawesome.com/7cd1f8e2dd.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- HAMBURGER CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
-    <!-- V-GRID -->
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/vicventum/v-grid/master/css/v-grid.min.css">
-    <!-- CUSTOM STYLES -->
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Home - Cartoon Hangover</title>
-  </head>
-  <body>
-    <!-- MENU -->
-    <header>
-      <section class="main-menu grid">
-        <h1 class="grid-tablet-3">
-          <a href="index.html" class="main-logo"> </a>
-        </h1>
-        <!-- ICONO DE HAMBURGUESA -->
-        <button class="icon-hamburger hamburger grid-tablet-1" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
 
-        <nav class="main-nav grid-tablet-8 hidden">
-          <ul class="main-nav__both main-nav__top">
-            <li><a href="#">SHOWS</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">CONTESTS</a></li>
-            <li><a href="merch.html">MERCH</a></li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/7cd1f8e2dd.js" crossorigin="anonymous"></script>
+  <!-- HAMBURGER CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+  <!-- V-GRID -->
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/vicventum/v-grid/master/css/v-grid.min.css">
+  <!-- V-GRID -->
+  <link rel="stylesheet" href="./app/vendor/v-grid.css">
+  
+  <title>Home - Cartoon Hangover</title>
+</head>
 
-          <ul class="main-nav__both main-nav__bottom">
-            <li>
-              <a>JOIN THE MAILING LIST <i></i></a>
-            </li>
-            <li><a>PRESS</a></li>
-            <li><a>PITCH</a></li>
-            <li><a>FAQ</a></li>
-            <li><a>JOBS</a></li>
-          </ul>
-        </nav>
-      </section>
-    </header>
+<body>
+  <!-- HEADER -->
+  <header id="header" class="header
+  v-flex j-content-between u-box u-box--pall">
 
-<!-- BANNER SOCIAL -->
-    <section class="bg-yellow">
-      <div class="banner-social container u-responsiveGrid">
-        <h2 class="banner-social__title ">IT’S BAD FOR YOU.</h2>
-        
-        <div class="banner-social__box-icons">
+    <!-- Logo -->
+    <a class=" header__logo" href="index.html">
+      <img class="" src="img/logo-menu.png" alt="Cartoon Hangover Logo">
+    </a>
+
+    <!-- Hamburger Icon -->
+    <button id="iconHamburger" class="header__hamburger hamburger hamburger--collapse u-hide-for-desktop" type="button">
+      <span class="hamburger-box">
+        <span class="header__hamburger-bars hamburger-inner"></span>
+      </span>
+    </button>
+    
+    <!-- Navigation -->
+    <nav class="header__nav 
+    ">
+      <ul class="header__nav-top">
+        <li><a href="#">SHOWS</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">CONTESTS</a></li>
+        <li><a href="#">MERCH</a></li>
+      </ul>
+
+      <ul class="header__nav-bottom">
+        <li>
+          <a>JOIN THE MAILING LIST <i></i></a>
+        </li>
+        <li><a>PRESS</a></li>
+        <li><a>PITCH</a></li>
+        <li><a>FAQ</a></li>
+        <li><a>JOBS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER SOCIAL -->
+  <section class="bg-yellow">
+    <div class="banner-social container u-responsiveGrid">
+      <h2 class="banner-social__title ">IT’S BAD FOR YOU.</h2>
+
+      <div class="banner-social__box-icons">
+        <ul class="social-icons ">
+          <li class="vrv-icon"></li>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-tumblr"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALERY HOME -->
+  <main class=" ">
+    <div class="shows-home container">
+      <div class="galery-home u-responsiveGrid">
+        <article class="galery-poster">
+          <img src="img/logo-con-fondo.jpg" alt="Cartoon Hangover Select">
+
+          <a class="galery-poster__line">Cartoon Hangover Select</a>
+        </article>
+        <article class="galery-poster">
+          <img src="img/bravest-warriors-poster.jpg" alt="Braves Warriors">
+
+          <a class="galery-poster__line">Braves Warriors</a>
+        </article>
+        <article class="galery-poster">
+          <img src="img/bee-and-puppycat-poster.png" alt="bee and puppycat">
+
+          <a class="galery-poster__line">bee and puppycat</a>
+        </article>
+        <article class="galery-poster">
+          <img src="img/go-cartoons-poster.png" alt="go! cartoons">
+
+          <a class="galery-poster__line">go! cartoons</a>
+        </article>
+        <article class="galery-poster">
+          <img src="img/slug-riot-square-poster.jpg" alt="Slug Riot">
+
+          <a class="galery-poster__line">Slug Riot</a>
+        </article>
+        <article class="galery-poster">
+          <img src="img/not-hero-square-poster.jpg" alt="(not)hero">
+
+          <a class="galery-poster__line">(not)hero</a>
+        </article>
+        <article class="galery-poster">
+          <img src="img/chris-p-duck-square-poster.jpg" alt="Chris P. Duck">
+
+          <a class="galery-poster__line">Chris P. Duck</a>
+        </article>
+        <article class="galery-poster">
+          <img src="img/shadowstone-park-square-poster.jpg" alt="shadowstone park">
+
+          <a class="galery-poster__line">shadowstone park</a>
+        </article>
+      </div>
+
+      <div class="shows-btn">
+        <a href="#" class=" btn btn-purple ">VIEW ALL SHOWS</a>
+
+      </div>
+    </div>
+
+    <!--MERCHANDISE-->
+    <div class="bg-red">
+      <div class="merchandise container">
+        <h2 class="merchandise__title">MERCHANDISE</h2>
+
+        <div class="galery-merchandise u-responsiveGrid">
+          <article class="galery-merchandise__poster">
+            <a href="#" class="galery-merchandise__img">
+              <img src="img/bravest-warriors-pin.png" alt="bravest warriors pin">
+            </a>
+
+            <h3 class="galery-merchandise__title"> <a href="#">Bravest Warriors</a></h3>
+            <p class="galery-merchandise__desc"><a href="">Limited Edition Gas Powered Pin Set</a></p>
+          </article>
+          <article class="galery-merchandise__poster">
+            <a href="#" class="galery-merchandise__img">
+              <img src="img/robot-men-tshirt.png" alt="robot-men-tshirt">
+            </a>
+
+            <h3 class="galery-merchandise__title"> <a href="#">Bravest Warriors</a></h3>
+            <p class="galery-merchandise__desc"><a href="">Limited Edition Gas Powered Pin Set</a></p>
+          </article>
+          <article class="galery-merchandise__poster">
+            <a href="#" class="galery-merchandise__img">
+              <img src="img/bee-and-puppycat-tshirt.png" alt="bee-and-puppycat-tshirt">
+            </a>
+
+            <h3 class="galery-merchandise__title"> <a href="#">Bravest Warriors</a></h3>
+            <p class="galery-merchandise__desc"><a href="">Limited Edition Gas Powered Pin Set</a></p>
+          </article>
+          <article class="galery-merchandise__poster">
+            <a href="#" class="galery-merchandise__img">
+              <img src="img/bravest-warriors-tshirt.png" alt="bravest warriors t-shirt">
+            </a>
+
+            <h3 class="galery-merchandise__title"> <a href="#">Bravest Warriors</a></h3>
+            <p class="galery-merchandise__desc"><a href="">Limited Edition Gas Powered Pin Set</a></p>
+          </article>
+        </div>
+
+        <div class="merchandise__button">
+          <a href="#" class=" btn btn-dark ">VIEW ALL MERCH</a>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- BANNER NEWSLETTER -->
+  <section class="bg-purple">
+    <div class="banner-newsletter container u-responsiveFlex">
+      <div class="newsletter">
+        <h2>JOIN THE MAILING LIST</h2>
+        <p>And receive exclusive updates about all things Cartoon Hangover.</p>
+
+        <form class="newsletter__form">
+          <input class="newsletter__camp" type="email" placeholder="YOUR EMAIL">
+
+
+          <input class="newsletter__button btn btn-dark" type="submit" value="Join">
+      </div>
+
+      <div class="follow">
+        <h2>FOLLOW</h2>
+
+        <div class="icon-container">
           <ul class="social-icons ">
             <li class="vrv-icon"></li>
             <li><i class="fab fa-facebook-f"></i></li>
@@ -67,216 +205,87 @@
             <li><i class="fab fa-twitter"></i></li>
             <li><i class="fab fa-youtube"></i></li>
           </ul>
+
         </div>
+      </div>
+    </div>
+
+
+    <div class="social">
+
+    </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer container ">
+    <section class="menu-footer u-responsiveGrid">
+      <div class="menu-footer__logo">
 
       </div>
 
-    </section>
+      <div class="">
+        <h3 class="menu-footer__sub-title">Cartoonhangover.com</h3>
 
-<!-- GALERY HOME -->
-    <main class=" ">
-      <div class="shows-home container">
-        <div class="galery-home u-responsiveGrid">
-          <article class="galery-poster">
-            <img src="img/logo-con-fondo.jpg" alt="Cartoon Hangover Select">
-          
-            <a class="galery-poster__line">Cartoon Hangover Select</a>
-          </article>
-          <article class="galery-poster">
-            <img src="img/bravest-warriors-poster.jpg" alt="Braves Warriors">
-          
-            <a class="galery-poster__line">Braves Warriors</a>
-          </article>
-          <article class="galery-poster">
-            <img src="img/bee-and-puppycat-poster.png" alt="bee and puppycat">
-          
-            <a class="galery-poster__line">bee and puppycat</a>
-          </article>
-          <article class="galery-poster">
-            <img src="img/go-cartoons-poster.png" alt="go! cartoons">
-          
-            <a class="galery-poster__line">go! cartoons</a>
-          </article>
-          <article class="galery-poster">
-            <img src="img/slug-riot-square-poster.jpg" alt="Slug Riot">
-          
-            <a class="galery-poster__line">Slug Riot</a>
-          </article>
-          <article class="galery-poster">
-            <img src="img/not-hero-square-poster.jpg" alt="(not)hero">
-          
-            <a class="galery-poster__line">(not)hero</a>
-          </article>
-          <article class="galery-poster">
-            <img src="img/chris-p-duck-square-poster.jpg" alt="Chris P. Duck">
-          
-            <a class="galery-poster__line">Chris P. Duck</a>
-          </article>
-          <article class="galery-poster">
-            <img src="img/shadowstone-park-square-poster.jpg" alt="shadowstone park">
-          
-            <a class="galery-poster__line">shadowstone park</a>
-          </article>
-        </div >
-        
-        <div class="shows-btn">
-          <a href="#" class=" btn btn-purple ">VIEW ALL SHOWS</a>
-        
-        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shows</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pitch</a></li>
+          <li><a href="#">Contests</a></li>
+          <li><a href="#">Merchandise</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
 
-<!--MERCHANDISE-->
-      <div class="bg-red">
-        <div class="merchandise container">
-          <h2 class="merchandise__title">MERCHANDISE</h2>
-          
-          <div class="galery-merchandise u-responsiveGrid">
-            <article class="galery-merchandise__poster">
-              <a href="#" class="galery-merchandise__img"> 
-                <img src="img/bravest-warriors-pin.png" alt="bravest warriors pin">
-              </a>
-          
-              <h3 class="galery-merchandise__title"> <a href="#">Bravest Warriors</a></h3>
-              <p class="galery-merchandise__desc"><a href="">Limited Edition Gas Powered Pin Set</a></p>
-            </article>
-            <article class="galery-merchandise__poster">
-              <a href="#" class="galery-merchandise__img"> 
-                <img src="img/robot-men-tshirt.png" alt="robot-men-tshirt">
-              </a>
-          
-              <h3 class="galery-merchandise__title"> <a href="#">Bravest Warriors</a></h3>
-              <p class="galery-merchandise__desc"><a href="">Limited Edition Gas Powered Pin Set</a></p>
-            </article>
-            <article class="galery-merchandise__poster">
-              <a href="#" class="galery-merchandise__img"> 
-                <img src="img/bee-and-puppycat-tshirt.png" alt="bee-and-puppycat-tshirt">
-              </a>
-          
-              <h3 class="galery-merchandise__title"> <a href="#">Bravest Warriors</a></h3>
-              <p class="galery-merchandise__desc"><a href="">Limited Edition Gas Powered Pin Set</a></p>
-            </article>
-            <article class="galery-merchandise__poster">
-              <a href="#" class="galery-merchandise__img"> 
-                <img src="img/bravest-warriors-tshirt.png" alt="bravest warriors t-shirt">
-              </a>
-          
-              <h3 class="galery-merchandise__title"> <a href="#">Bravest Warriors</a></h3>
-              <p class="galery-merchandise__desc"><a href="">Limited Edition Gas Powered Pin Set</a></p>
-            </article>
-          </div>
-          
-          <div class="merchandise__button">
-            <a href="#" class=" btn btn-dark ">VIEW ALL MERCH</a>
-            
-          </div>
-        </div>
+      <div class="">
+        <h3 class="menu-footer__sub-title">Frederator.com</h3>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shows</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pitch</a></li>
+          <li><a href="#">Contests</a></li>
+          <li><a href="#">Merchandise</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-    </main>
 
+      <div class="">
+        <h3 class="menu-footer__sub-title">FrederatorStudios.com</h3>
 
-
-<!-- BANNER NEWSLETTER -->
-    <section class="bg-purple">
-      <div class="banner-newsletter container u-responsiveFlex">
-        <div class="newsletter">
-          <h2>JOIN THE MAILING LIST</h2>
-          <p>And receive exclusive updates about all things Cartoon Hangover.</p>
-
-          <form class="newsletter__form">          
-              <input class="newsletter__camp" type="email" placeholder="YOUR EMAIL">
-    
-
-              <input class="newsletter__button btn btn-dark" type="submit" value="Join">
-          </div>
-
-          <div class="follow">
-            <h2>FOLLOW</h2>
-            
-            <div class="icon-container">
-              <ul class="social-icons ">
-                <li class="vrv-icon"></li>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-tumblr"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-youtube"></i></li>
-              </ul>
-
-            </div>
-          </div>
-        </div>
-
-
-        <div class="social">
-
-        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pitch</a></li>
+          <li><a href="#">Contests</a></li>
+          <li><a href="#">Merchandise</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
     </section>
 
-<!-- FOOTER -->
-    <footer class="main-footer container ">
-        <section class="menu-footer u-responsiveGrid">
-            <div class="menu-footer__logo">
+    <div class="u-line"></div>
 
-            </div>
+    <section class="menu-credits">
+      <p>©2019 Frederator Networks, Inc.</p>
+      <p>A WOW! Unlimited Media Company. ALL RIGHTS RESERVED.</p>
+      <p class="menu-credits__love">Frederator Loves You.</p>
+      <p class="menu-credits__development-by">Developed by Victor Alvarez with Sass</p>
+    </section>
+  </footer>
 
-            <div class="">
-                <h3 class="menu-footer__sub-title">Cartoonhangover.com</h3>
 
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shows</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pitch</a></li>
-                    <li><a href="#">Contests</a></li>
-                    <li><a href="#">Merchandise</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+  
+  <!-- SCRIPTS -->
+  <script src="./index.js"></script>
+</body>
 
-            <div class="">
-                <h3 class="menu-footer__sub-title">Frederator.com</h3>
-
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shows</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pitch</a></li>
-                    <li><a href="#">Contests</a></li>
-                    <li><a href="#">Merchandise</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="">
-                <h3 class="menu-footer__sub-title">FrederatorStudios.com</h3>
-
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pitch</a></li>
-                    <li><a href="#">Contests</a></li>
-                    <li><a href="#">Merchandise</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <div class="u-line"></div>
-
-        <section class="menu-credits">
-          <p>©2019 Frederator Networks, Inc.</p>
-          <p>A WOW! Unlimited Media Company. ALL RIGHTS RESERVED.</p>
-          <p class="menu-credits__love">Frederator Loves You.</p>
-          <p class="menu-credits__development-by">Developed by Victor Alvarez with Sass</p>
-        </section>
-    </footer>
-     
-  </body>
 </html>

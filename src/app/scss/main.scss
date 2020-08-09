@@ -1,30 +1,28 @@
+// vendor
+// include-media
+@import "../../../node_modules/include-media/dist/include-media";
+
 // config
 @import "config/variables";
-@import "config/config"; 
-
-// base
-@import "base/reset";
+@import "config/reset"; 
 
 // helpers
 @import "helpers/mixins";
 @import "helpers/utilities";
 
 // layouts
-@import "layouts/grid";
-@import "layouts/main-menu";
-@import "layouts/main-footer";
+@import "layout/header";
+// @import "layout/main-footer";
 
-// vendor
-@import "vendor/hamburger";
 
-// components
-@import "components/buttons";
-@import "components/social-icons";
-@import "components/banner-title";
-@import "components/banner-social";
-@import "components/banner-newsletter";
+// // components
+// @import "components/buttons";
+// @import "components/social-icons";
+// @import "components/banner-title";
+// @import "components/banner-social";
+// @import "components/banner-newsletter";
 
-// views
-@import "views/home";
-@import "views/about";
-@import "views/merch";
+// // views
+// @import "views/home";
+// @import "views/about";
+// @import "views/merch";
