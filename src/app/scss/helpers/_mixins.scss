@@ -1,17 +1,7 @@
 // Funcion para obtener imagenes
 @function img($img) {
-    @return url('../img/#{$img}'); 
+    @return url('../../img/#{$img}'); 
 }
-
-
-
-
-// @mixin reset-list {
-//     list-style: none;
-//     padding-left: 0;
-//     margin-top: 0;
-//     margin-bottom: 0;
-//   }
 
 @function z-index($val) {
     @return map-get($z-index, $val);

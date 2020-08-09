@@ -1,0 +1,175 @@
+.header {
+    position: relative;
+
+    &.open {
+
+        .header__nav{
+            // transform: translateX(0%);
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+ 
+    &__logo {
+        display: block;
+        width: 140px;
+        height: 65px;
+        
+        
+        background: img('logo-menu.png') no-repeat top;
+        background-size: cover;
+
+        margin-top: -$sp-1;
+
+        @include mq(tablet) {
+            width: 256px;
+            height: 119px;
+            
+        }
+    }
+
+    &__hamburger {
+        position: relative;
+        z-index: z-index(offcanvas);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__hamburger-bars,
+    &__hamburger-bars::before,
+    &__hamburger-bars::after {
+        background-color: #fff!important;
+    }
+
+
+    &__nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: z-index(overlay);
+
+        width: 100vw;
+        height: 100vh;
+        padding: 5rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // text-align: center;
+
+        background-color: rgba(0, 0, 0, 0.9);
+        font-size: 2rem;
+        line-height: 2.5;
+
+        transform: scale(.6);
+        visibility: hidden;
+        opacity: 0;
+
+        transition: opacity .5s ease-in-out, transform .3s ease-in-out;
+
+        // &-list {
+        //     position: absolute;
+        //     z-index: $z4;
+        //     bottom: 0;
+        //     left: 0;
+        //     width: 100vw;
+        //     height: 85%;
+        //     background-color: $blueDarkMain;
+        //     padding: 4rem;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: space-around;
+
+        //     transform: translateX(-100%);
+        //     transition: transform .3s ease-in-out;
+
+        //     @include media('>=tablet') {
+        //         position: relative;
+        //         bottom: initial;
+        //         left: initial;
+        //         width: 38%;
+        //         height: initial;
+        //         padding: 0;
+        //         background-color: $blueDarkIntro;
+                
+        //         flex-direction: row;
+        //         transform: translate(0);
+        //     }
+        // }
+
+        // &-item {
+        //     border-bottom: 1px solid $light;
+        //     width: 100%;
+            
+        //     @include media('>=tablet') {
+        //         display: flex;
+        //         justify-content: space-evenly;
+        //         border-bottom: none;
+
+                
+        //     }
+        // }
+        // &-link {
+        //     display: block;
+        //     font-size: 2rem;
+        //     border-bottom: 1px solid transparent;
+
+        //     @include media('>=tablet') {
+        //         font-size: $subtitleFontSize;
+        //         padding-bottom: 2px;
+
+        //         &:hover {
+        //             border-bottom: 1px solid $light;
+        //         }
+        //     }
+        // }
+    }
+
+    // &__nav {
+    //     grid-column: 5 / 13;
+    //     // display: none;
+
+    //     font-size: rfs(3.0rem);
+
+    //     // @include mq(tablet){ 
+    //     //     display: block;
+    //     //     font-size: 2rem;
+    //     // }
+    //     // @include mq(laptop){ 
+    //     //     display: block;
+    //     //     font-size: 3.0rem;
+    //     // }
+        
+    //     &__both {
+    //         display: flex;
+    //         justify-content: space-between;
+
+    //     }
+
+    //     &__top {
+    //         margin-bottom: $sp-1 - 0.5;
+            
+    //         li {
+    //             font-weight: $fw-bold;
+                
+    //         }
+    //     }   
+
+    //     &__bottom {
+    //         font-weight: bold;
+    //         margin-left: $sp-4;
+
+    //         @include mq(tablet){ 
+    //             font-size: 1.5rem;
+    //         }
+    //         @include mq(laptop){
+    //             font-size: 2rem;
+    //         }   
+    //     }
+    // }
+
+    
+}

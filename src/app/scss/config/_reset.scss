@@ -1,3 +1,8 @@
+// Importar tipografia
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto+Condensed:300,400,700&display=swap');
+// Importar iconos
+@import url("https://file.myfontastic.com/CtJ7M0B6DyxJKbZveWPadP/icons.css");
+
 /********************* RESET *********************/
 html {
     box-sizing: border-box;
@@ -16,11 +21,22 @@ html {
 
 // Por si un elemento se desborda
 body {
-    // overflow: hidden;
+    font-family: $title-font;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $light;
+    background-color: $dark;
 }
 
 h1, h2, h3 {
     margin: 0;
+    font-weight: $fw-bold
+}
+h1 {font-size: $h1;}
+h2 {font-size: $h2;}
+h3 {
+    font-size: $h3;
+    font-weight: $fw-light;
 }
 
 ul {
@@ -29,9 +45,11 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
 }
-
+p {
+    font-family: $body-font;
+}
 a {
-    // font-weight: bold;
+    font-weight: $fw-light;
     text-decoration: none;
     color: $light;
     transition: all .3s ease-in-out;
