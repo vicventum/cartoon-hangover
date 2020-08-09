@@ -13,21 +13,8 @@
     
  
     &__logo {
-        display: block;
-        width: 140px;
-        height: 65px;
         
-        
-        background: img('logo-menu.png') no-repeat top;
-        background-size: cover;
-
-        margin-top: -$sp-1;
-
-        @include mq(tablet) {
-            width: 256px;
-            height: 119px;
-            
-        }
+    
     }
 
     &__hamburger {
