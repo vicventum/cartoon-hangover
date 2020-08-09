@@ -1,0 +1,25 @@
+.banner {
+    background-color: $yellow-base;
+    color: $dark;
+    text-align: center;
+
+    &__icons {
+        margin-top: 3rem;
+        font-size: 2rem;
+
+        a { color: $dark; }
+
+        &-vrv {
+            display: block;
+            background-image: img('vrv-logo-dark.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            width: 6rem;
+            height: 2rem;
+            align-self: center;
+            // margin-top: .5rem;
+        }
+    }
+}
