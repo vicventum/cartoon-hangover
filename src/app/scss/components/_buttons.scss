@@ -16,9 +16,11 @@
 
     &--dark {
         background-color: $dark;
+        border: 1px solid transparent;
         
         &:hover {
-            background-color: $red-base;
+            background-color: $red-dark;
+            border: 1px solid $dark;
         }
     }
     &--red {
