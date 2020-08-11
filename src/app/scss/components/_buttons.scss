@@ -1,30 +1,34 @@
 .btn {
     display: inline-block;
+    // display: block;
+    padding: 1.2rem 2.8rem;
+
     background-color: $dark;
     color: $light;
-    padding: 0.4rem 1.3rem;
     border: none;
     cursor: pointer;
-    font-size: 2rem;
-    margin-right: 0.5rem;
     outline: none;
+
+    font-size: $shows-size;
+    font-weight: $fw-normal;
+
     transition: all 0.2s ease-in;
 
-    &.btn-dark {
+    &--dark {
         background-color: $dark;
         
         &:hover {
             background-color: $red-base;
         }
     }
-    &.btn-red {
+    &--red {
         background-color: $red-base;
         
         &:hover {
             background-color: $dark;
         }
     }
-    &.btn-purple {
+    &--purple {
         background-color: $purple-base;
         color: $light;
         

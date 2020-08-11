@@ -15,8 +15,9 @@
     // Fonts
     --title-font: 'Roboto Condensed', sans-serif;
     --body-font: 'Montserrat', sans-serif;
-
+    
     --title-size: 2.8rem;
+    --shows-size: 1.95rem;
     --font-size: 1.6rem;
     
     --line-height: 1.6;
@@ -36,7 +37,7 @@
     --header-height: 5rem;
 
 
-    --logo-width: 4rem;
+    --logo-width: 14rem;
     --logo-height: 4rem;
     --logo-spacing: .5rem;
 
@@ -60,10 +61,13 @@ $dark: var(--dark);
 $title-font: var(--title-font);
 $body-font: var(--body-font);
 
+$title-size: var(--title-size);
+$shows-size: var(--shows-size);
+$font-size: var(--font-size);
+
 $fw-light: var(--fw-light);
 $fw-normal: var(--fw-normal);
 $fw-bold: var(--fw-bold);
-$font-size: var(--font-size);
 $line-height: var(--line-height);
 
 

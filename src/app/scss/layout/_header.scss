@@ -13,7 +13,7 @@
     
  
     &__logo {
-        
+        width: $logo-width;
     
     }
 
@@ -40,15 +40,13 @@
         width: 100vw;
         height: 100vh;
         padding: 5rem;
+        padding-top: 8rem;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        // text-align: center;
+        text-align: center;
+        // letter-spacing: 4px;
 
         background-color: rgba(0, 0, 0, 0.9);
-        font-size: 2rem;
+        font-size: 2.2rem;
         line-height: 2.5;
 
         transform: scale(.6);
@@ -57,6 +55,10 @@
 
         transition: opacity .5s ease-in-out, transform .3s ease-in-out;
 
+        a {
+            font-weight: $fw-bold;
+            letter-spacing: 4px;
+        }
         // &-list {
         //     position: absolute;
         //     z-index: $z4;
