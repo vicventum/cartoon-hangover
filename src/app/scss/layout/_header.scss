@@ -14,7 +14,7 @@
  
     &__logo {
         width: $logo-width;
-    
+        min-width: $logo-width;
     }
 
     &__hamburger {
@@ -43,10 +43,8 @@
         padding-top: 8rem;
 
         text-align: center;
-        // letter-spacing: 4px;
 
         background-color: rgba(0, 0, 0, 0.9);
-        font-size: 2.2rem;
         line-height: 2.5;
 
         transform: scale(.6);
@@ -58,107 +56,63 @@
         a {
             font-weight: $fw-bold;
             letter-spacing: 4px;
+
+            @include media('>=tablet') {
+                letter-spacing: initial;
+            }    
         }
-        // &-list {
-        //     position: absolute;
-        //     z-index: $z4;
-        //     bottom: 0;
-        //     left: 0;
-        //     width: 100vw;
-        //     height: 85%;
-        //     background-color: $blueDarkMain;
-        //     padding: 4rem;
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: space-around;
-
-        //     transform: translateX(-100%);
-        //     transition: transform .3s ease-in-out;
-
-        //     @include media('>=tablet') {
-        //         position: relative;
-        //         bottom: initial;
-        //         left: initial;
-        //         width: 38%;
-        //         height: initial;
-        //         padding: 0;
-        //         background-color: $blueDarkIntro;
-                
-        //         flex-direction: row;
-        //         transform: translate(0);
-        //     }
-        // }
-
-        // &-item {
-        //     border-bottom: 1px solid $light;
-        //     width: 100%;
-            
-        //     @include media('>=tablet') {
-        //         display: flex;
-        //         justify-content: space-evenly;
-        //         border-bottom: none;
-
-                
-        //     }
-        // }
-        // &-link {
-        //     display: block;
-        //     font-size: 2rem;
-        //     border-bottom: 1px solid transparent;
-
-        //     @include media('>=tablet') {
-        //         font-size: $subtitleFontSize;
-        //         padding-bottom: 2px;
-
-        //         &:hover {
-        //             border-bottom: 1px solid $light;
-        //         }
-        //     }
-        // }
-    }
-
-    // &__nav {
-    //     grid-column: 5 / 13;
-    //     // display: none;
-
-    //     font-size: rfs(3.0rem);
-
-    //     // @include mq(tablet){ 
-    //     //     display: block;
-    //     //     font-size: 2rem;
-    //     // }
-    //     // @include mq(laptop){ 
-    //     //     display: block;
-    //     //     font-size: 3.0rem;
-    //     // }
         
-    //     &__both {
-    //         display: flex;
-    //         justify-content: space-between;
-
-    //     }
-
-    //     &__top {
-    //         margin-bottom: $sp-1 - 0.5;
+        @include media('>=tablet') {
+            position: relative;
+            top: initial;
+            left: initial;
+            height: initial;
+            padding: 0;
+            width: 60%;
             
-    //         li {
-    //             font-weight: $fw-bold;
-                
-    //         }
-    //     }   
+            transform: initial;
+            visibility: initial;
+            opacity: initial;
+        }
 
-    //     &__bottom {
-    //         font-weight: bold;
-    //         margin-left: $sp-4;
+        @include media('>=laptop') {
+            width: 70%;
+        }
 
-    //         @include mq(tablet){ 
-    //             font-size: 1.5rem;
-    //         }
-    //         @include mq(laptop){
-    //             font-size: 2rem;
-    //         }   
-    //     }
-    // }
 
+
+        &-top {
+            font-size: $menu-top-size;
+
+            @include media('>=tablet') {
+                justify-content: space-between;
+            }
+        }
     
+        &-bottom {
+            --size-mt: 0;
+
+            font-size: $menu-bottom-size;
+            margin-top: var(--size-mt);
+
+            @include media('>=tablet') {
+                --size-mt: -1rem;
+                justify-content: flex-end;
+            }
+
+
+            a {
+                --size-ml: 0;
+                margin-left: var(--size-ml);
+                
+                @include media('>=tablet') {
+                    font-weight: $fw-light;
+                    --size-ml: 2rem;
+                }
+                @include media('>=laptop') {
+                    --size-ml: 3rem;
+                }
+            }       
+        }
+    }
 }

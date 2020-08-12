@@ -17,6 +17,8 @@
     --body-font: 'Montserrat', sans-serif;
     
     --title-size: 2.8rem;
+    --menu-top-size: 2.2rem;
+    --menu-bottom-size: var(--menu-top-size);
     --shows-size: 1.95rem;
     --font-size: 1.7rem;
     --min-size: 1.5rem;
@@ -28,9 +30,13 @@
 
     @include media('>=tablet') {
         --title-size: 3rem;
+        --menu-top-size: 1.8rem;
+        --menu-bottom-size: 1.6rem;
     }
-    @include media('>=desktop') {
+    @include media('>=laptop') {
         --title-size: 3.1rem;
+        --menu-top-size: 3rem;
+        --menu-bottom-size: 2.4rem;
     }
 
 
@@ -41,6 +47,13 @@
     --logo-width: 14rem;
     --logo-height: 4rem;
     --logo-spacing: .5rem;
+
+    @include media('>=tablet') {
+        --logo-width: 15rem;
+    }
+    @include media('>=laptop') {
+        --logo-width: 24rem;
+    }
 
     --h1: 3.2rem;
     --h2: 2.5rem;
@@ -63,6 +76,8 @@ $title-font: var(--title-font);
 $body-font: var(--body-font);
 
 $title-size: var(--title-size);
+$menu-top-size: var(--menu-top-size);
+$menu-bottom-size: var(--menu-bottom-size);
 $shows-size: var(--shows-size);
 $font-size: var(--font-size);
 $min-size: var(--min-size);
