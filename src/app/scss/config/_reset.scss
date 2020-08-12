@@ -55,7 +55,7 @@ a {
     transition: all .3s ease-in-out;
     cursor: pointer;
 
-    &:hover{color: $yellow-base;}
+    &:hover{color: $yellow-base!important;}
 }
 
 img {

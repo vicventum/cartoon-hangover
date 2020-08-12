@@ -198,42 +198,38 @@
 
 
   <!-- BANNER NEWSLETTER -->
-  <section class="bg-purple">
-    <div class="banner-newsletter container u-responsiveFlex">
+    <section class="banner-newsletter u-bg--purple
+      u-box u-box--px u-bg--purple
+      v-flex flex-col">
+
+      <!-- Newsletter -->
       <div class="newsletter">
-        <h2>JOIN THE MAILING LIST</h2>
-        <p>And receive exclusive updates about all things Cartoon Hangover.</p>
+        <h2 class="newsletter__title">JOIN THE MAILING LIST</h2>
+        <p class="newsletter__desc">And receive exclusive updates about all things Cartoon Hangover.</p>
 
         <form class="newsletter__form">
-          <input class="newsletter__camp" type="email" placeholder="YOUR EMAIL">
+          <input class="newsletter__input" type="email" placeholder="YOUR EMAIL">
 
 
-          <input class="newsletter__button btn btn-dark" type="submit" value="Join">
+          <input class="newsletter__submit btn btn-dark" type="submit" value="Join">
       </div>
 
-      <div class="follow">
-        <h2>FOLLOW</h2>
+      <!-- Banner Icons -->
+      <div class="banner">
+        <h2 class="banner__title">FOLLOW</h2>
 
-        <div class="icon-container">
-          <ul class="social-icons ">
-            <li class="vrv-icon"></li>
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-tumblr"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-youtube"></i></li>
-          </ul>
 
-        </div>
+        <ul class="banner__icons
+          v-flex j-content-evenly a-items-center">  
+          <li><a class="banner__icons-vrv" href="#"></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
       </div>
-    </div>
-
-
-    <div class="social">
-
-    </div>
-    </div>
-  </section>
+    </section>
 
   <!-- FOOTER -->
   <footer class="main-footer container ">
