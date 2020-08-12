@@ -19,6 +19,7 @@
     --title-size: 2.8rem;
     --shows-size: 1.95rem;
     --font-size: 1.7rem;
+    --min-size: 1.5rem;
     
     --line-height: 1.6;
     --fw-light: 300;
@@ -64,6 +65,7 @@ $body-font: var(--body-font);
 $title-size: var(--title-size);
 $shows-size: var(--shows-size);
 $font-size: var(--font-size);
+$min-size: var(--min-size);
 
 $fw-light: var(--fw-light);
 $fw-normal: var(--fw-normal);

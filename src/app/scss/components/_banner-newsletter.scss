@@ -1,62 +1,58 @@
 .banner-newsletter {
-    padding: 2rem 2rem; 
-    height: 40rem;
-    align-items: center;
-    justify-content: center;
-
-    @include mq(tablet) {
-        height: 25rem;
-    }
-
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    
     .newsletter {
-        text-align: center;
-        flex-basis: 100%;
-
-        @include mq(tablet) {
-            flex-basis: 50%;
+        
+        
+        &__title {
+            font-weight: $fw-normal;
         }
-
-        p {
-            font-weight: $fw-light;
-            margin-bottom: $sp-2;
-            color: rgba(255, 255, 255, 0.466);
+        &__desc {
+            font-size: $min-size;
         }
 
         &__form {
             display: flex;
-            
+            justify-content: center;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
         }
-        &__camp {
-            width: 80%;
+        &__input {
+            width: 75%;
             border-top-left-radius: 34px;
             border-bottom-left-radius: 34px;
-            padding: $sp-1 + .5;
+            padding: 1.5rem;
             border: none;
         }
-        &__button {
-            width: 20%;
+        &__submit {
+            width: 25%;
             border-top-right-radius: 34px;
             border-bottom-right-radius: 34px;
         }
     }
 
-    .follow {
-        text-align: center;
-        justify-content: center;
 
-        flex-basis: 100%;
+    .banner {
+        background-color: transparent;
+        color: $light;
 
-        @include mq(tablet) {
-            flex-basis: 50%;
-        }
-        h2 {
-            margin-bottom: $sp-4;
-        }
-        .icon-container {
-            display: flex;
-            justify-content: center;
+        &__title {
+            font-weight: $fw-normal;
         }
 
-        
+        &__icons {
+            margin-top: 2rem;
+            
+            a {
+                color: $light;
+                // &:hover{color: $yellow-base;}
+            }
+
+            &-vrv {
+                filter: invert(1);
+            }
+        }
     }
 }
