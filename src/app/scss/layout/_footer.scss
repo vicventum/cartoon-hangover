@@ -1,0 +1,63 @@
+.footer {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+
+    .search {
+        
+        &__desc {
+            font-family: $body-font;
+            font-size: $min-size;
+            font-weight: $fw-light;
+        }
+
+        &__box {
+            margin: 1rem auto 4rem auto;
+        }
+
+        &__input,
+        &__btn {
+            padding: 1rem;
+            font-size: $min-size
+        }
+
+        &__btn {
+            margin-left: .5rem;
+        }
+    }
+
+    .menu-footer {
+
+        &__logo {
+            width: 15rem;
+            padding: 2rem 0;
+        }
+
+        &__subtitle {
+            font-size: $font-size;
+            font-weight: $fw-bold;
+        }
+
+        &__menu {
+            margin: 2rem auto;
+
+            a {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .credits-footer {
+
+        font-size: 1.5rem;
+
+        &__love {
+            color: $red-base!important;
+        }
+
+        &__dev-by {
+            margin-top: 2rem;
+        }
+    }
+}
