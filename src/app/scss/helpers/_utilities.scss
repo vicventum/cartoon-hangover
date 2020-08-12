@@ -6,27 +6,24 @@
         margin: 0 auto;
         --p-y: 2.2rem;
         --p-x: 1.4rem;
+
+        @include media('>=tablet') {
+            --p-y: 2.4rem;
+            --p-x: 2.2rem;
+        }
     
         &--pall {
             padding-top: var(--p-y);
             padding-bottom: var(--p-y);
             padding-left: var(--p-x);
             padding-right: var(--p-x);
-    
-            @include media('>=laptop') {
-                padding-top: 9.6rem;
-                padding-bottom: 9.6rem;
-            }
+
         }
     
         &--py {
             padding-top: var(--p-y);
             padding-bottom: var(--p-y);
     
-            @include media('>=laptop') {
-                padding-top: 9.6rem;
-                padding-bottom: 9.6rem;
-            }
         }
         &--px {
             padding-left: var(--p-x);
@@ -35,19 +32,10 @@
     
         &--pt {
             padding-top: var(--p-y);
-            
-            @include media('>=laptop') {
-                padding-top: 9.6rem;
-                
-            }
         }
         &--pb {
             padding-bottom: var(--p-y);
     
-            @include media('>=laptop') {
-                padding-bottom: 9.6rem;
-                
-            }
         }
         &--pl {padding-left: var(--p-x);}
         &--pr {padding-right: var(--p-x);}
