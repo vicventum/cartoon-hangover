@@ -1,4 +1,17 @@
 .galery-shows {
+    --width: 50rem;
+    max-width: var(--width);
+    margin: 0 auto;
+
+    @include media('>=tablet') {
+        --width: 70rem;
+    }
+    @include media('>=laptop') {
+        --width: 90rem;
+    }
+    @include media('>=desktop') {
+        --width: 100%;
+    }
 
     &__title {
         font-size: $shows-size;

@@ -22,16 +22,24 @@
     --shows-size: 1.95rem;
     --font-size: 1.7rem;
     --min-size: 1.5rem;
+
+    --show-size: 10rem;
     
     --line-height: 1.6;
     --fw-light: 300;
     --fw-normal: 400;
     --fw-bold: 700;
 
+    @include media('>=phone') {
+        --show-size: 17rem;
+    }
+
     @include media('>=tablet') {
         --title-size: 3rem;
         --menu-top-size: 1.8rem;
         --menu-bottom-size: 1.6rem;
+
+        --show-size: 21rem;
     }
     @include media('>=laptop') {
         --title-size: 3.1rem;
@@ -82,6 +90,8 @@ $shows-size: var(--shows-size);
 $font-size: var(--font-size);
 $min-size: var(--min-size);
 
+$show-size: var(--show-size);
+
 $fw-light: var(--fw-light);
 $fw-normal: var(--fw-normal);
 $fw-bold: var(--fw-bold);
@@ -116,7 +126,7 @@ $spaceamounts: (1,2,3,4,5);
 // );
 // Breakpoints
 $breakpoints: (
-  'phone': 320px,
+  'phone': 420px,
   'tablet': 768px,
   'laptop': 1024px,
   'desktop': 1400px

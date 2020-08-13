@@ -42,12 +42,11 @@
     
     }
 
-    $min-size: 15rem;
     // Responsive Grid 
     &-responsiveGrid {
         display: grid;
         // gap: 1em;
-        grid-template-columns: repeat(auto-fit, minmax($min-size, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax($show-size, 1fr));
     }
         
     // Resposive Flexbox
@@ -56,7 +55,7 @@
         flex-wrap: wrap;
     
         & > * {
-            flex: 1 1 $min-size;
+            flex: 1 1 $show-size;
         }
     }
     
