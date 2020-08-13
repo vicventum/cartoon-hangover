@@ -1,6 +1,7 @@
 .footer {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    $size: 6rem;
+    margin-top: $size;
+    margin-bottom: $size;
     text-align: center;
 
     .search {
@@ -17,16 +18,22 @@
 
         &__input,
         &__btn {
+            border: none;
             padding: 1rem;
             font-size: $min-size
         }
 
         &__btn {
             margin-left: .5rem;
+
+            &:hover {
+                background-color: $red-dark;
+            }
         }
     }
 
     .menu-footer {
+
 
         &__logo {
             width: 15rem;
@@ -40,24 +47,24 @@
 
         &__menu {
             margin: 2rem auto;
+            
+            @include media('>=tablet') {
+                text-align: left;
+            }
 
             a {
                 text-transform: uppercase;
-                font-size: 1.5rem;
+                font-size: $min-size;
             }
         }
     }
 
     .credits-footer {
 
-        font-size: 1.5rem;
+        font-size: $min-size;
 
-        &__love {
-            color: $red-base!important;
-        }
+        &__love { color: $red-base!important; }
 
-        &__dev-by {
-            margin-top: 2rem;
-        }
+        &__dev-by { margin-top: 2rem; }
     }
 }

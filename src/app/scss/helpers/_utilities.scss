@@ -78,6 +78,10 @@
         width: 80%;
         background-color: #ccc;
         margin: 4rem auto;
+
+        @include media('>=laptop') {
+            width: 40%;
+        }
     }
 
 

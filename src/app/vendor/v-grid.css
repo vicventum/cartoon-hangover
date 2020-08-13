@@ -1223,6 +1223,9 @@
   .m\:grid-rows-none {
     grid-template-rows: none;
   }
+  .m\:col-full {
+    grid-column: 1 / -1;
+  }
   .m\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -2056,6 +2059,9 @@
   }
   .t\:grid-rows-none {
     grid-template-rows: none;
+  }
+  .t\:col-full {
+    grid-column: 1 / -1;
   }
   .t\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -2891,6 +2897,9 @@
   .l\:grid-rows-none {
     grid-template-rows: none;
   }
+  .l\:col-full {
+    grid-column: 1 / -1;
+  }
   .l\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -3724,6 +3733,9 @@
   }
   .d\:grid-rows-none {
     grid-template-rows: none;
+  }
+  .d\:col-full {
+    grid-column: 1 / -1;
   }
   .d\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
