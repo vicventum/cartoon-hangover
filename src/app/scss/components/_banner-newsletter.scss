@@ -1,13 +1,24 @@
 .banner-newsletter {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    $size: 4rem;
+    padding-top: $size;
+    padding-bottom: $size;
     text-align: center;
+
+    background-color: $purple-base;
+    color: $light;
     
     .newsletter {
+        align-items: center;
+        margin-bottom: 4rem;
+
+        @include media('>=laptop') {
+            margin-bottom: initial;
+        }
         
         
         &__title {
             font-weight: $fw-normal;
+            font-size: $title-size;
         }
         &__desc {
             font-size: $min-size;
@@ -17,7 +28,6 @@
             display: flex;
             justify-content: center;
             margin-top: 2rem;
-            margin-bottom: 4rem;
         }
         &__input {
             width: 75%;
@@ -36,10 +46,16 @@
 
     .banner {
         background-color: transparent;
-        color: $light;
+        color: inherit;
 
+        @include media('>=laptop') {
+            padding: 0;
+            margin-top: -2rem;
+        }
+        
         &__title {
             font-weight: $fw-normal;
+            font-size: $title-size;
         }
 
         &__icons {
@@ -47,7 +63,7 @@
             
             a {
                 color: $light;
-                // &:hover{color: $yellow-base;}
+                &:hover{color: $yellow-base;}
             }
 
             &-vrv {

@@ -2,15 +2,26 @@
 
     // Container
     &-box {
-        max-width: $max-width;
-        margin: 0 auto;
+        --width: 50rem;
         --p-y: 2.2rem;
         --p-x: 1.4rem;
 
+        max-width: var(--width);
+        margin: 0 auto;
+
         @include media('>=tablet') {
+            --width: 70rem;
+
             --p-y: 2.4rem;
             --p-x: 2.2rem;
         }
+        @include media('>=laptop') {
+            --width: 90rem;
+        }
+        @include media('>=desktop') {
+            max-width: $max-width;
+        }
+
     
         &--pall {
             padding-top: var(--p-y);

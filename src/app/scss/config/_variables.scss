@@ -45,6 +45,7 @@
         --title-size: 3.1rem;
         --menu-top-size: 3rem;
         --menu-bottom-size: 2.4rem;
+        --min-size: 1.4rem;
     }
 
 
@@ -117,13 +118,6 @@ $sp-5: 5rem;
 
 $spaceamounts: (1,2,3,4,5);
 
-// Breakpoints
-// $breakpoints: (
-//     mobile: 360px,
-//     tablet: 768px,
-//     laptop: 1024px,
-//     desktop: 1400px
-// );
 // Breakpoints
 $breakpoints: (
   'phone': 420px,
