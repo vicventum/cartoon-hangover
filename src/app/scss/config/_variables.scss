@@ -31,7 +31,7 @@
     --fw-bold: 700;
 
     @include media('>=phone') {
-        --show-size: 17rem;
+        // --show-size: 17rem;
     }
 
     @include media('>=tablet') {
