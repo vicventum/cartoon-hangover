@@ -1,5 +1,9 @@
 .header {
     position: relative;
+    --size-x: 4rem;
+    --size-y: 1rem;
+
+    padding: var(--size-y) var(--size-x);
 
     &.open {
 
