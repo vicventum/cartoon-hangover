@@ -1,37 +1,24 @@
-.about-us {
-    padding: $sp-5 $sp-3;
-    
-    &__img {
-        padding: 0 20%;
+.about {
+    $size: 6rem;
+    padding-top: $size;
+    padding-bottom: $size;
 
-        @include mq(tablet) {
-            padding: 0;
-        }
+    &__logo {
+        max-width: 22rem;
+        display: block;
+        margin: 0 auto;
     }
 
-    &__desc{
-        font-family: $second-font;
-        padding: 0 $sp-2;
-        line-height: 2;
-        
-        p {
-            margin-bottom: $sp-3;
-        }
+    p {
+        font-family: $title-font;
+        font-size: $min-size;
+        line-height: 1.8;
+
+        margin-bottom: 2rem;
     }
 
     a {
         color: $yellow-base;
-        
-        &:hover {
-            color: $purple-base;
-        }    
     }
 
-    &__links {
-
-        a {
-            display: block;
-            line-height: 3;
-        }
-    }
 }
