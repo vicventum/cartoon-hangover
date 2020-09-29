@@ -9,7 +9,8 @@ hamburger.addEventListener("click", () => {
   // Toggle class "is-active"
   hamburger.classList.toggle("is-active");
   body.classList.toggle("no-scroll")
-  menu.classList.toggle("open");
+  // menu.classList.toggle("open");
+  header.classList.toggle("open");
 
   console.log('mano qlq');
 });
