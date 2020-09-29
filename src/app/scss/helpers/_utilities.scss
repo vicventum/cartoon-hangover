@@ -2,24 +2,26 @@
 
     // Container
     &-box {
-        --width: 50rem;
-        --p-y: 2.2rem;
-        --p-x: 1.4rem;
+        --width: 90%;
+        --p-y: 2.5rem;
+        --p-x: calc(var(--p-y) - .5rem);
 
-        max-width: var(--width);
+        width: var(--width);
         margin: 0 auto;
+        max-width: $max-width;
+
 
         @include media('>=tablet') {
-            --width: 70rem;
+            --p-y: 6rem;
+            --width: 85%;
+        }
 
-            --p-y: 2.4rem;
-            --p-x: 2.2rem;
-        }
         @include media('>=laptop') {
-            --width: 90rem;
+            --width: 80%;
         }
+
         @include media('>=desktop') {
-            max-width: $max-width;
+            // max-width: $max-width;
         }
 
     
@@ -53,35 +55,13 @@
     
     }
 
-    // Responsive Grid 
-    &-responsiveGrid {
-        display: grid;
-        // gap: 1em;
-        grid-template-columns: repeat(auto-fit, minmax($show-size, 1fr));
-    }
-        
-    // Resposive Flexbox
-    &-responsiveFlex {
-        display: flex;
-        flex-wrap: wrap;
-    
-        & > * {
-            flex: 1 1 $show-size;
-        }
-    }
-    
 
-    &-text-center { text-align: center;}
     &-round-img { border-radius: 50%;}
-    &-line {
-        height: 3px;
-        width: 80%;
-        background-color: #ccc;
-        margin: 4rem auto;
-
-        @include media('>=laptop') {
-            width: 40%;
-        }
+    &-truncate {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
 

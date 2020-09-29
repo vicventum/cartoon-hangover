@@ -1,3 +1,12 @@
+
+// Breakpoints
+$breakpoints: (
+  'phone': 420px,
+  'tablet': 768px,
+  'laptop': 1024px,
+  'desktop': 1400px
+);
+
 :root {
     // Colors
     --red-base: #ed2225;
@@ -118,13 +127,6 @@ $sp-5: 5rem;
 
 $spaceamounts: (1,2,3,4,5);
 
-// Breakpoints
-$breakpoints: (
-  'phone': 420px,
-  'tablet': 768px,
-  'laptop': 1024px,
-  'desktop': 1400px
-) !default;
 
 // z-index
 $z-index: (
