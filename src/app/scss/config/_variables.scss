@@ -22,7 +22,7 @@ $breakpoints: (
     --second-dark: #111111;
 
     // Fonts
-    --title-font: 'Roboto', sans-serif;
+    --title-font: 'Roboto Condensed', sans-serif;
     --body-font: 'Montserrat', sans-serif;
     
     --title-size: 2.8rem;
@@ -74,7 +74,7 @@ $breakpoints: (
     }
 
     --h1: 3.2rem;
-    --h2: 2.5rem;
+    --h2: var(--title-size);
     --h3: 2.0rem;
 }
 

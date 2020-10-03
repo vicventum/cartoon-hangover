@@ -1,5 +1,5 @@
 // Importar tipografia
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto+Condensed:300,400,700&display=swap');
 // Importar iconos
 // @import url("https://file.myfontastic.com/CtJ7M0B6DyxJKbZveWPadP/icons.css");
 
@@ -39,8 +39,8 @@ h1, h2, h3, h4 {
 }
 h1 {font-size: $h1;}
 h2 {font-size: $h2;}
-h3 {
-    font-size: $h3;
+h3 {font-size: $h3;}
+h2, h3 {
     font-weight: $fw-light;
 }
 
@@ -52,6 +52,11 @@ ul {
 }
 p {
     font-family: $body-font;
+    // font-family: $title-font;
+    font-size: $min-size;
+    line-height: 1.8;
+
+    // margin-bottom: 2rem;
 }
 a {
     font-weight: $fw-light;
@@ -61,6 +66,9 @@ a {
     cursor: pointer;
 
     &:hover{color: $yellow-base;}
+}
+p a {
+    color: $yellow-base;
 }
 
 img {
