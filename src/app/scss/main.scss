@@ -28,6 +28,7 @@
 @import "components/galery-shows";
 @import "components/galery-merchandise";
 @import "components/banner-newsletter";
+@import "components/_form.sass";
 // @import "components/social-icons";
 // @import "components/banner-title";
 // @import "components/banner-social";
@@ -35,4 +36,5 @@
 // views
 @import "views/home";
 @import "views/about";
-// @import "views/merch";
+@import "views/_contact.sass";
+@import "views/merch";
