@@ -69,6 +69,7 @@ a {
 }
 p a {
     color: $yellow-base;
+    &:hover{color: $purple-base;}
 }
 
 img {

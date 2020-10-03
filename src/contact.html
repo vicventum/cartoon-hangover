@@ -75,8 +75,10 @@
 
 
   <!-- CONTACT -->
-  <main class="contact u-box u-box--py">
-    <article class="contact__people col-space-3 text-center">
+  <main class="contact u-box u-box--py text-center
+    t:v-grid t:grid-cols-2 t:text-left t:gap-4
+    l:grid-cols-3 l:gap-5">
+    <article class="contact__people col-space-3">
       <h2>Our People</h2>
 
       <article class="contact__card">
@@ -118,7 +120,7 @@
     </article>
 
     <!-- contact__inquiries -->
-    <article class="contact__inquiries col-space-3 text-center">
+    <article class="contact__inquiries col-space-3">
 
       <h2>Inquiries</h2>
 
@@ -158,37 +160,37 @@
           </a></p>
       </article>
 
+    </article>
 
-      <!-- contact__form -->
-      <article class="contact__form col-space-3 text-center">
-        <h2>General Contact Form</h2>
+    <!-- contact__form -->
+    <article class="contact__form col-space-3
+      t:col-span-2 l:col-span-1">
+      <h2>General Contact Form</h2>
 
-        <p>
-          Just have something general you want to ask? Use the form below for general questions.
-        </p>
+      <p>
+        Just have something general you want to ask? Use the form below for general questions.
+      </p>
 
-        <form class="form">
-          <h3 class="form__title">Fields marked with an <span>*</span> are required</h3>
+      <form class="form">
+        <h3 class="form__title">Fields marked with an <span>*</span> are required</h3>
 
-          <div class="form__field">
-            <label for="name">Name <span>*</span></label>
-            <input required type="text" name="name">
-          </div>
+        <div class="form__field">
+          <label for="name">Name <span>*</span></label>
+          <input required type="text" name="name">
+        </div>
 
-          <div class="form__field">
-            <label for="email">Email <span>*</span></label>
-            <input required type="email" name="email">
-          </div>
+        <div class="form__field">
+          <label for="email">Email <span>*</span></label>
+          <input required type="email" name="email">
+        </div>
 
-          <div class="form__field">
-            <label for="message">Message <span>*</span></label>
-            <textarea required name="message"></textarea>
-          </div>
+        <div class="form__field">
+          <label for="message">Message <span>*</span></label>
+          <textarea required name="message"></textarea>
+        </div>
 
-          <input class="form__btn btn btn--red " type="submit" value="SUBMIT">
-        </form>
-
-      </article>
+        <input class="form__btn btn btn--red " type="submit" value="SUBMIT">
+      </form>
 
     </article>
 
@@ -203,9 +205,10 @@
       <p><a href="#">Click here for current job openings at Frederator!</a></p>
     </div>
 
-    <div class="jobs__where v-grid grid-cols-4 gap-2 row-gap-3">
+    <div class="jobs__where v-grid grid-cols-4 gap-2 row-gap-3
+      t:grid-cols-3">
 
-      <article class="col-space-2  col-span-2">
+      <article class="col-space-2  col-span-2  t:col-span-1">
         <h2>Where Are We</h2>
 
         <p><strong>Email:</strong> <a href="">hey@frederator.com</a></p>
@@ -215,7 +218,7 @@
         </p>
       </article>
 
-      <article class="col-space-0,5 col-span-2">
+      <article class="col-space-0,5 col-span-2 t:col-span-1">
         <h2>East Coast</h2>
 
         <p><strong>New York</strong></p>
@@ -225,7 +228,8 @@
         <p>Phone: +1 212-779-4133</p>
       </article>
 
-      <article class="col-space-0,5 col-span-2 col-start-2">
+      <article class="col-space-0,5 col-span-2 col-start-2 
+        t:col-span-1 t:col-start-auto">
         <h2>West Coast</h2>
 
         <p><strong>California</strong> (<a href="#">Click here for a map</a>)</p>
