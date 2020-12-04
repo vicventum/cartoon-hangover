@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- FAVICON -->
+  <link rel="icon" type="img/png" sizes="32x32" href="./img/favicon.png">
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/7cd1f8e2dd.js" crossorigin="anonymous"></script>
+  <!-- HAMBURGER CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+  <!-- V-GRID -->
+  <!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/vicventum/v-grid/master/css/v-grid.min.css"> -->
+  <!-- V-GRID -->
+  <!-- <link rel="stylesheet" href="./app/vendor/v-grid.css"> -->
+  <link rel="stylesheet" href="app/scss/main.scss">
+
+  <title>JOBS - Cartoon Hangover</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="header" class="header
+  v-flex j-content-between ">
+
+    <!-- Logo -->
+    <a class=" header__logo
+      " href="index.html">
+      <img class="" src="img/logo-menu.png" alt="Cartoon Hangover Logo">
+    </a>
+
+    <!-- Hamburger Icon -->
+    <button id="iconHamburger" class="header__hamburger hamburger hamburger--collapse u-hide-for-desktop" type="button">
+      <span class="hamburger-box">
+        <span class="header__hamburger-bars hamburger-inner"></span>
+      </span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="header__nav 
+    ">
+      <ul class="header__nav-top
+        t:v-flex">
+        <li><a class="u-hide-for-desktop" href="index.html">HOME</a></li>
+        <li><a href="shows.html">SHOWS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <!-- <li><a href="#">CONTESTS</a></li> -->
+        <li><a href="merch.html">MERCH</a></li>
+      </ul>
+
+      <ul class="header__nav-bottom
+        t:v-flex ">
+        <li>
+          <a href="mailing-list.html">JOIN THE MAILING LIST <i></i></a>
+        </li>
+        <!-- <li><a>PRESS</a></li> -->
+        <!-- <li><a>PITCH</a></li> -->
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="jobs.html" class="u-active">JOBS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER SOCIAL -->
+  <div class="banner-container u-bg--yellow">
+    <section class="banner-social banner
+    v-flex flex-col j-content-center t:a-items-center 
+    u-box u-box--px">
+
+      <h1 class="banner__title">JOBS</h1>
+    </section>
+  </div>
+
+  <!-- JOBS -->
+  <main id="jobs" class="jobs u-box u-box--pall">
+    <p class="u-highlight">
+      Frederator Networks is proud to be an equal opportunity employer.
+    </p>
+
+    <p>
+      At Frederator we celebrate the diversity of our team and encourage people of any shape, size, color, gender,
+      religion, sexual orientation, country of origin, and veteran or disability status to apply. All employment
+      decisions are made on the basis of qualifications, merit, and business needs.
+    </p>
+
+    <p>
+      See below for all current opportunities with Frederator and for application instructions.
+    </p>
+
+    <p class="u-highlight">
+      Frederator Loves You!
+    </p>
+
+    <div class="jobs__info">
+      <h2>Current Available Jobs</h2>
+
+      <p>
+        We have no openings at the moment, check back regularly or email <span class="u-highlight">jobs@frederator.com</span>
+      </p>
+    </div>
+  </main>
+
+
+
+
+  <!-- BANNER NEWSLETTER -->
+  <div class="u-bg--purple">
+    <section class="banner-newsletter banner
+        u-box u-box--px 
+        l:v-grid l:grid-cols-2 l:j-content-center l:j-items-center l:a-items-center">
+
+      <!-- Newsletter -->
+      <div class="newsletter
+        l:w-10/12">
+        <h2 class="newsletter__title">JOIN THE MAILING LIST</h2>
+        <p class="newsletter__desc">And receive exclusive updates about all things Cartoon Hangover.</p>
+
+        <form class="newsletter__form">
+          <input class="newsletter__input" type="email" placeholder="YOUR EMAIL">
+
+
+          <input class="newsletter__submit btn btn-dark" type="submit" value="Join">
+      </div>
+
+      <!-- Banner Icons -->
+      <div class="banner
+        v-flex flex-col a-items-center 
+        l:w-2/3">
+        <h2 class="banner__title">FOLLOW</h2>
+
+
+        <ul class="banner__icons
+            v-flex j-content-between a-items-center w-2/3 t:w-2/4 l:w-full">
+          <li><a class="banner__icons-vrv" href="#"></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer 
+    u-box u-box--px ">
+
+    <section class="menu-footer
+      m:v-grid m:grid-cols-2 t:grid-cols-3 l:grid-cols-4 m:j-items-center">
+      <!-- Search -->
+      <div class="search
+        m:col-full m:w-2/3 t:w-1/2 d:w-1/3">
+        <p class="search__desc">
+          SEARCH ALL THE FREDERATOR SITES
+        </p>
+
+        <div class="search__box
+          v-flex a-items-center j-content-center">
+          <input class="search__input
+            w-4/6" type="search" id="" placeholder="ENHANCED BY Google">
+
+          <button class="search__btn btn btn--red
+            w-1/6" type="submit"><i class="fab fas-facebook">🔍</i></button>
+        </div>
+      </div>
+
+      <!-- Logo -->
+      <img class="menu-footer__logo
+        m:col-full l:col-auto" src="img/logo-footer.gif" alt="Logo Cartoon Hangover">
+
+
+      <!-- Menus -->
+      <div class="menu-footer__menu">
+        <h3 class="menu-footer__subtitle">Cartoonhangover.com</h3>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shows</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pitch</a></li>
+          <li><a href="#">Contests</a></li>
+          <li><a href="#">Merchandise</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-footer__menu">
+        <h3 class="menu-footer__subtitle">Frederator.com</h3>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shows</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pitch</a></li>
+          <li><a href="#">Contests</a></li>
+          <li><a href="#">Merchandise</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-footer__menu">
+        <h3 class="menu-footer__subtitle">FrederatorStudios.com</h3>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pitch</a></li>
+          <li><a href="#">Contests</a></li>
+          <li><a href="#">Merchandise</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="u-line"></div>
+
+    <!-- Credits -->
+    <section class="credits-footer">
+      <p>©2019 Frederator Networks, Inc.</p>
+      <p>A WOW! Unlimited Media Company. ALL RIGHTS RESERVED.</p>
+      <p class="credits-footer__love">Frederator and Victor Loves You.</p>
+      <p class="credits-footer__dev-by">Developed by <a href="https://victoralvarez.web.app"><strong>Victor
+            Alvarez</strong></a></p>
+    </section>
+  </footer>
+
+
+
+  <!-- SCRIPTS -->
+  <script src="./index.js"></script>
+</body>
+
+</html>
