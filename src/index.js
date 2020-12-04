@@ -3,4 +3,4 @@
 
 // Import JavaScript
 import "./app/vendor/hamburger-config";
-import "./app/js/app";
+import "./app/js/tabs";
