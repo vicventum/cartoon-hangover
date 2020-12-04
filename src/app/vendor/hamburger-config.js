@@ -1,14 +1,16 @@
-// Look for .hamburger
-const hamburger = document.getElementById("iconHamburger"),
-  menu = document.getElementById('menu'),
-  body = document.getElementById('body'),
-  links = document.querySelectorAll('.nav__link')
+import {
+  root,
+  header,
+  hamburger,
+  links,
+  menu
+} from "../js/utilities/variables";
 
 // On click
 hamburger.addEventListener("click", () => {
   // Toggle class "is-active"
   hamburger.classList.toggle("is-active");
-  body.classList.toggle("no-scroll")
+  root.classList.toggle("no-scroll")
   // menu.classList.toggle("open");
   header.classList.toggle("open");
 
@@ -18,7 +20,7 @@ hamburger.addEventListener("click", () => {
 links.forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove("is-active");
-    body.classList.remove("no-scroll")
+    root.classList.remove("no-scroll")
     menu.classList.remove("open");
   })
 })

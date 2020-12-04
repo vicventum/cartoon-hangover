@@ -1,18 +1,11 @@
-const $id = document.getElementById.bind(document)
-const $class = document.querySelector.bind(document)
-const $all = document.querySelectorAll.bind(document)
-
-const rootStyles = document.documentElement.style,
+export const $id = document.getElementById.bind(document),
+  $class = document.querySelector.bind(document),
+  $all = document.querySelectorAll.bind(document),
+  rootStyles = document.documentElement.style,
   rootStylesGet = window.getComputedStyle(document.documentElement),
-  root = $id('root'),
-  tabs = $id('tabs')
-
-export {
-  $id,
-  $class,
-  $all,
-  rootStyles,
-  rootStylesGet,
-  root,
-  tabs
-}
+  root = document.getElementsByTagName('html')[0],
+  tabs = $id('tabs'),
+  header = $id('header'),
+  hamburger = $id('iconHamburger'),
+  links = $all('.nav__link'),
+  menu = $id('menu')

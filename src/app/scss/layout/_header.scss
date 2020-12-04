@@ -5,6 +5,10 @@
 
     padding: var(--size-y) var(--size-x);
 
+    @include media('>=tablet') {
+        --size-x: 7rem;
+    }
+
     &.open {
 
         .header__nav{
@@ -19,6 +23,12 @@
     &__logo {
         width: $logo-width;
         min-width: $logo-width;
+
+        transition: transform .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.06);
+        }
     }
 
     &__hamburger {
@@ -27,6 +37,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-right: 0;
     }
     &__hamburger-bars,
     &__hamburger-bars::before,
@@ -43,19 +54,21 @@
 
         width: 100vw;
         height: 100vh;
-        padding: 5rem;
-        padding-top: 8rem;
+        padding: 3rem;
+        padding-top: 7rem;
 
         text-align: center;
 
         background-color: rgba(0, 0, 0, 0.9);
         line-height: 2.5;
 
-        transform: scale(.6);
+        transform: scale(.8);
         visibility: hidden;
         opacity: 0;
 
-        transition: opacity .5s ease-in-out, transform .3s ease-in-out;
+        transition-property: opacity, transform, visibility;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
 
         a {
             font-weight: $fw-bold;
@@ -72,15 +85,15 @@
             left: initial;
             height: initial;
             padding: 0;
-            width: 60%;
+            width: 50%;
             
             transform: initial;
             visibility: initial;
             opacity: initial;
         }
 
-        @include media('>=laptop') {
-            width: 70%;
+        @include media('>=laptop', '<1250px') {
+            width: 65%;
         }
 
 
