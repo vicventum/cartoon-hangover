@@ -1,0 +1,21 @@
+.jobs {
+  text-align: center;
+
+  p {
+    font-size: $shows-size;
+    margin-bottom: 2rem;
+  }
+
+  &__info {
+    padding: 2rem 0;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      padding: 1rem;
+      border: 1px solid $gray-dark;
+      border-radius: 1rem;
+    }
+  }
+}
