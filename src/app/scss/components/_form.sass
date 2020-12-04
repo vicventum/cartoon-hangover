@@ -1,43 +1,69 @@
 .form
-  background-color: $second-dark
-  border: 1px solid $gray-dark
-  border-radius: 1rem
-  text-align: left
-
-  padding: 2rem
-
-  &__title
-    font-size: 1.2rem
-    text-transform: uppercase
-    text-align: center
-
-  span
-    color: $red-base
-
-  label 
-    font-weight: $fw-bold
-    display: block
-
-  &__field 
-    padding: 1.5rem 0
-  
-  input:not(.btn), textarea 
-    width: 100%
-    padding: 1rem
-
-    font-weight: $fw-bold
-    color: $second-dark
-
-    border: none
-    border-radius: 5px
-
-  textarea
-    height: 20rem
-    font-size: 1.4rem
-    font-family: inherit
-
-  &__btn
-    display: block
-    margin: 0 auto
+    background-color: $second-dark
+    border: 1px solid $gray-dark
     border-radius: 1rem
+    text-align: left
+
+    padding: 2rem
+
+    &__title
+        font-size: 1.2rem
+        text-transform: uppercase
+        text-align: center
+
+    span
+        color: $red-base
+
+    label
+        font-weight: $fw-bold
+        display: block
+
+    &__field
+        padding: 1.5rem 0
+
+    input:not(.btn), textarea
+        width: 100%
+        padding: 1rem
+
+        font-weight: $fw-bold
+        color: $second-dark
+
+        border: none
+        border-radius: 5px
+
+    textarea
+        height: 20rem
+        font-size: 1.4rem
+        font-family: inherit
+
+    &__btn
+        display: block
+        margin: 0 auto
+        border-radius: 1rem
+
+.form--mailing-list
+
+    fieldset
+        border: none
+        border-radius: 1rem
+        padding: 2rem 0
+
+        +media('>=tablet')
+            border: 1px solid $gray-dark
+            padding: 2rem
+
+        input:not(.btn)
+            width: initial
+            margin-right: 1rem
+            
+            [type="checkbox"]
+                color: red
+                padding: 1rem
+
+            
+    fieldset:last-of-type
+        border: none
+
+    label
+        display: block
     
