@@ -12,13 +12,17 @@
   <!-- FONT AWESOME -->
   <script src="https://kit.fontawesome.com/7cd1f8e2dd.js" crossorigin="anonymous"></script>
   <!-- HAMBURGER CSS -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+  <!-- V-GRID -->
+  <!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/vicventum/v-grid/master/css/v-grid.min.css"> -->
+  <!-- V-GRID -->
+  <!-- <link rel="stylesheet" href="./app/vendor/v-grid.css"> -->
+  <link rel="stylesheet" href="app/scss/main.scss">
 
-  <link rel="stylesheet" href="./app/scss/main.scss">
-  <title>Contact - Cartoon Hangover</title>
+  <title>FAQ - Cartoon Hangover</title>
 </head>
 
-<body id="body">
+<body>
   <!-- HEADER -->
   <header id="header" class="header
   v-flex j-content-between ">
@@ -42,11 +46,11 @@
       <ul class="header__nav-top
         t:v-flex">
         <li><a class="u-hide-for-desktop" href="index.html">HOME</a></li>
-        <li><a href="shows.html">SHOWS</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="#">SHOWS</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CONTACT</a></li>
         <li><a href="#">CONTESTS</a></li>
-        <li><a href="merch.html">MERCH</a></li>
+        <li><a href="#">MERCH</a></li>
       </ul>
 
       <ul class="header__nav-bottom
@@ -68,178 +72,78 @@
     v-flex flex-col j-content-center t:a-items-center 
     u-box u-box--px">
 
-      <h1 class="banner__title">CONTACT</h1>
+      <h1 class="banner__title">FAQ</h1>
     </section>
   </div>
 
+  <!-- FAQ -->
+  <main id="faq" class="faq u-box u-box--pall">
+    <h2>20 years making the shows your parents judge you for loving.</h2>
 
+    <div class="faq__container">
+      <!-- tabs -->
+      <div id="tabs" class="tabs">
 
-  <!-- CONTACT -->
-  <main class="contact u-box u-box--py text-center
-    t:v-grid t:grid-cols-2 t:text-left t:gap-4
-    l:grid-cols-3 l:gap-5">
-    <article class="contact__people col-space-3">
-      <h2>Our People</h2>
-
-      <article class="contact__card">
-        <h3>Fred Seibert</h3>
-        <p>Founder/CEO</p>
-        <p><a href="#">fred@frederator.com</a></p>
-      </article>
-
-      <article class="contact__card">
-        <h3>Fred Pustay</h3>
-        <p>CFO & General Manager</p>
-        <p><a href="#">fpustay@frederator.com</a></p>
-      </article>
-
-      <article class="contact__card">
-        <h3>Kevin Kolde</h3>
-        <p>Vice President, Production – Frederator Studios</p>
-        <p><a href="#">kevin@frederator.com</a></p>
-      </article>
-
-      <article class="contact__card">
-        <h3>Carrie Miller</h3>
-        <p>Vice President, Digital Production & Programming</p>
-        <p><a href="#">carrie@frederator.com</a></p>
-      </article>
-
-      <article class="contact__card">
-        <h3>Brian Gucciardo</h3>
-        <p>General Counsel</p>
-        <p><a href="#">brian@frederator.com</a></p>
-      </article>
-
-      <article class="contact__card">
-        <h3>Kenneth Ash</h3>
-        <p>Director of Networks</p>
-        <p><a href="#">kenny@frederator.com</a></p>
-      </article>
-
-    </article>
-
-    <!-- contact__inquiries -->
-    <article class="contact__inquiries col-space-3">
-
-      <h2>Inquiries</h2>
-
-      <article class="contact__card">
-        <p>
-          Receive a YouTube copyright notice?
-        </p>
-        <p>email: <a href="#">
-            support@frederator.com
-          </a></p>
-      </article>
-
-      <article class="contact__card">
-        <p>
-          For questions about the Channel Frederator Network
-        </p>
-        <p>email: <a href="#">
-            support@frederator.com
-          </a></p>
-      </article>
-
-      <article class="contact__card">
-        <p>
-          For legal inquiries
-        </p>
-        <p>email: <a href="#">
-            brian@frederator.com
-          </a></p>
-      </article>
-
-      <article class="contact__card">
-        <p>
-          For other general inquiries
-        </p>
-        <p>email: <a href="#">
-            hey@frederator.com
-          </a></p>
-      </article>
-
-    </article>
-
-    <!-- contact__form -->
-    <article class="contact__form col-space-3
-      t:col-span-2 l:col-span-1">
-      <h2>General Contact Form</h2>
-
-      <p>
-        Just have something general you want to ask? Use the form below for general questions.
-      </p>
-
-      <form class="form">
-        <h3 class="form__title">Fields marked with an <span>*</span> are required</h3>
-
-        <div class="form__field">
-          <label for="name">Name <span>*</span></label>
-          <input required type="text" name="name">
+        <!-- item -->
+        <div class="tabs__item">
+          <h3 class="tabs__title">What do you guys have to do with Channel Frederator Network?</h3>
+          <div class="tabs__panel ">
+            <p>
+              Short answer: not much. Our focus at Studios is developing and producing shorts and series that come from awesome creators.
+            </p>
+            <p>
+              Channel Frederator Network connects independent artists and animators to one another and to other industry professionals, as well as to resources that help them grow their online followings, especially their YouTube audiences.
+            </p>
+            <p>
+              We will say, though: pitches that come from members of the Channel Frederator Network are flagged as such, and there are many talented potential creators in that pool.
+            </p>
+          </div>
         </div>
 
-        <div class="form__field">
-          <label for="email">Email <span>*</span></label>
-          <input required type="email" name="email">
+        <!-- item -->
+        <div class="tabs__item">
+          <h3 class="tabs__title">What do you guys have to do with Channel Frederator Network?</h3>
+          <div class="tabs__panel ">
+            <p>
+              If we’re being real: you don’t need a college education to become any sort of visual or performing artist. You just have to be good at what you do.
+            </p>
+            <p>
+              However, gaining the skills required to work as an independent animator requires a massive amount of time, work and dedication. And to get to the level that you’re hireable by a major, or even a small, studio, if that is what you’re after, is a whole other ballpark.
+            </p>
+            <p>
+              It’s no surprise then, that schools like SCAD, CalArts, RISD, USC, UCLA and SVA often serve as feeders into the studios—especially considering that some of their curriculums are built around the skills that studios look for in new hires. If you can become a student of a top animation program in the US – or schools like Seneca in Canada, or SCAD in Hong Kong – then congratulations: you’ve won a place near the front of a very competitive pack.
+            </p>
+            <p>
+              But even if a traditional Uni education isn’t for you, you have plenty of options that will help you hone your skills as an animator and creative. There are online and in-person animation programs that work with students of all experience and skill levels; seek them out in your area. Find great teachers who will help you build your portfolio and network. A lack of a degree won’t hold you back, if the quality and uniqueness of your creative work and ideas are propelling you forward. A degree on paper does not equate to talent or worth in the arts.
+            </p>
+            <p>
+              And perhaps the most important thing about working in animation, or any creative industry: be a good person. Treat everyone with respect. That will take you far, and it isn’t anything anyone can learn in a classroom.
+            </p>
+          </div>
         </div>
 
-        <div class="form__field">
-          <label for="message">Message <span>*</span></label>
-          <textarea required name="message"></textarea>
+        <!-- item -->
+        <div class="tabs__item">
+          <h3 class="tabs__title">How do I get a job or internship with you guys? </h3>
+          <div class="tabs__panel ">
+            <p>
+              Keep checking our jobs page; positions open up periodically.
+            </p>
+            <p>
+              We don’t have a set season for internships; rather, we bring interns in when it suits our needs, whims, and fancies. Keep an eye on our social media (Instagram / Tumblr / Twitter) for a heads up about internships.
+            </p>
+          </div>
         </div>
 
-        <input class="form__btn btn btn--red " type="submit" value="SUBMIT">
-      </form>
+      </div>
 
-    </article>
-
+      <!-- contact -->
+      <div class="faq__contact">
+        <h3>Contact Us</h3>
+        <a class="btn btn--red" href="contact.html">Click Here</a>
+      </div>
+    </div>
   </main>
-
-
-  <!-- JOBS -->
-  <section class="jobs u-box u-box--py col-space-4">
-
-    <div class="jobs__title text-center">
-      <h2>Jobs</h2>
-      <p><a href="#">Click here for current job openings at Frederator!</a></p>
-    </div>
-
-    <div class="jobs__where v-grid grid-cols-4 gap-2 row-gap-3
-      t:grid-cols-3">
-
-      <article class="col-space-2  col-span-2  t:col-span-1">
-        <h2>Where Are We</h2>
-
-        <p><strong>Email:</strong> <a href="">hey@frederator.com</a></p>
-        <p><strong>Web:</strong>
-          <a href="#">www.frederator.com</a>
-          <a href="#">www.channelfrederator.com</a>
-        </p>
-      </article>
-
-      <article class="col-space-0,5 col-span-2 t:col-span-1">
-        <h2>East Coast</h2>
-
-        <p><strong>New York</strong></p>
-        <p>Frederator Networks</p>
-        <p>22 West 21st Street</p>
-        <p>New York, NY 10010</p>
-        <p>Phone: +1 212-779-4133</p>
-      </article>
-
-      <article class="col-space-0,5 col-span-2 col-start-2 
-        t:col-span-1 t:col-start-auto">
-        <h2>West Coast</h2>
-
-        <p><strong>California</strong> (<a href="#">Click here for a map</a>)</p>
-        <p>Frederator Studios</p>
-        <p>2829 N. Glenoaks Blvd.</p>
-        <p>Burbank CA 91504</p>
-      </article>
-
-    </div>
-  </section>
 
 
   <!-- BANNER NEWSLETTER -->
