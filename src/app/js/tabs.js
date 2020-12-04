@@ -39,18 +39,18 @@ tabs.addEventListener('click', e => {
 
 function manageClass(mode) {
   if (mode) {
-    // currentItem.item.classList.add('item-in-hover')
+    currentItem.item.classList.add('tabs--show')
     // currentItem.title.classList.add('title-in-hover')
-    currentItem.panel.classList.add('tabs__panel--show')
+    // currentItem.panel.classList.add('item-in-hover')
   } else {
-    // prevItem.item.classList.remove('item-in-hover')
+    prevItem.item.classList.remove('tabs--show')
     // prevItem.title.classList.remove('title-in-hover')
-    prevItem.panel.classList.remove('tabs__panel--show')
+    // prevItem.panel.classList.remove('item-in-hover')
   }
 }
 
 function toggleClass() {
-  // currentItem.item.classList.toggle('item-in-hover')
+  currentItem.item.classList.toggle('tabs--show')
   // currentItem.title.classList.toggle('title-in-hover')
-  currentItem.panel.classList.toggle('tabs__panel--show')
+  // currentItem.panel.classList.toggle('item-in-hover')
 }

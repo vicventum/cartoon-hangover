@@ -83,6 +83,15 @@
             background-color: $purple-base;
         }   
     }
+
+    &-highlight {
+        font-weight: $fw-bold;
+        color: $purple-light;
+    }
+    &-active {
+        font-weight: $fw-bold !important;
+        color: $yellow-base;
+    }
     
     // Visibility
     &-none { display: none; }

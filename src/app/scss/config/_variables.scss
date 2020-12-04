@@ -14,6 +14,7 @@ $breakpoints: (
     --yellow-base: #fff100;
     --yellow-dark: #fff100;
     --purple-base: #92278f;
+    --purple-light: hsl(302, 40%, 60%);
     --purple-dark: rgba(146, 39, 143, 0.75);
     --light: rgb(241, 241, 241);
     --gray: rgb(71, 71, 71);
@@ -86,6 +87,7 @@ $red-dark: var(--red-dark);
 $yellow-base: var(--yellow-base);
 $yellow-dark: var(--yellow-dark);
 $purple-base: var(--purple-base);
+$purple-light: var(--purple-light);
 $purple-dark: var(--purple-dark);
 $light: var(--light);
 $gray: var(--gray);

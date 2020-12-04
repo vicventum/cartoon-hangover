@@ -6,6 +6,8 @@
   border: 1px solid $gray-dark;
   border-radius: 1rem;
 
+
+
   &__item:first-child &__title {
     border-top: none;
   }
@@ -14,6 +16,17 @@
     padding: 1rem 0;
     border-top: 1px solid $gray-dark;
     font-size: $font-size;
+
+    cursor: pointer;
+
+    transition: color .3s ease-in-out;
+
+    @include media('>=tablet') {
+      font-size: $shows-size;
+      &:hover {
+        color: $yellow-base;
+      }
+    }
   }
 
 
@@ -21,20 +34,34 @@
     max-height: 0;
     opacity: .1;
     visibility: hidden;
-    margin-top: 1.5rem;
+    margin-top: 0;
 
-    transition-property: visibility opacity height max-height;
+    line-height: 1.8;
+
+    overflow: hidden;
+
+    transition-property: visibility opacity height max-height margin-top;
     transition-duration: 0.4s;
     transition-timing-function: ease-in-out;
 
-    &--show {
+    
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &--show {
+    
+    .tabs__title {
+      color: $yellow-base;
+    } 
+
+    .tabs__panel {
       opacity: 1;
       visibility: visible;
       max-height: var(--height-panel);
-    }
-
-    p {
-      margin-bottom: 1rem;
+      margin-top: 1.5rem;
     }
   }
+
 }
