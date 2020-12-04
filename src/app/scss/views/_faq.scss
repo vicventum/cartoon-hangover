@@ -4,4 +4,11 @@
     font-size: $shows-size;
   }
 
+  &__contact {
+    h3 {
+      font-size: $title-size;
+      margin-bottom: 1rem;
+    }
+  }
+
 }
