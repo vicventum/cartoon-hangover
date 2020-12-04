@@ -3,39 +3,42 @@ import {
   tabs
 } from "./utilities/variables";
 
-let prevItem = null, currentItem = null
+let prevItem = null,
+  currentItem = null
 
-tabs.addEventListener('click', e => {
-  let item = null
-  if (e.target.classList.contains('tabs__item'))
-    item = e.target
-  else if (e.target.parentElement.classList.contains('tabs__item'))
-    item = e.target.parentElement
+if (tabs !== null) {
+  tabs.addEventListener('click', e => {
+    let item = null
+    if (e.target.classList.contains('tabs__item'))
+      item = e.target
+    else if (e.target.parentElement.classList.contains('tabs__item'))
+      item = e.target.parentElement
 
-  console.log(item.children);
+    console.log(item.children);
 
-  // Guardando el item
-  if (item) {
-    currentItem = {
-      item,
-      title: item.children[0],
-      panel: item.children[1]
+    // Guardando el item
+    if (item) {
+      currentItem = {
+        item,
+        title: item.children[0],
+        panel: item.children[1]
+      }
+      // Reseteando el item anterior
+      if (prevItem !== null && currentItem.item !== prevItem.item) {
+        manageClass(false)
+        // prevItem.panel.style.maxHeight = 0
+      }
+      // Desplegando el item actual
+      if (currentItem !== null) {
+        const maxHeight = currentItem.panel.scrollHeight
+        rootStyles.setProperty('--height-panel', `calc(${maxHeight}px + 50px)`)
+        toggleClass()
+        // manageClass(true)
+        prevItem = currentItem
+      }
     }
-    // Reseteando el item anterior
-    if (prevItem !== null && currentItem.item !== prevItem.item) {
-      manageClass(false)
-      // prevItem.panel.style.maxHeight = 0
-    }
-    // Desplegando el item actual
-    if (currentItem !== null) {
-      const maxHeight = currentItem.panel.scrollHeight
-      rootStyles.setProperty('--height-panel', `calc(${maxHeight}px + 50px)`)
-      toggleClass()
-      // manageClass(true)
-      prevItem = currentItem
-    }
-  }
-})
+  })
+}
 
 function manageClass(mode) {
   if (mode) {
