@@ -1,4 +1,6 @@
 .tabs {
+  
+
   margin: 3rem 0;
   padding: 2rem;
 
@@ -7,13 +9,15 @@
   border-radius: 1rem;
 
 
-
+  
   &__item:first-child &__title {
     border-top: none;
   }
 
+
   &__title {
-    padding: 1.6rem 0;
+    position: relative;
+    padding: 1.6rem 2rem 1.6rem 0;
     border-top: 1px solid $gray-dark;
     font-size: $font-size;
 
@@ -26,6 +30,16 @@
       &:hover {
         color: $yellow-base;
       }
+    }
+
+    &::after {
+      content: '❮';
+      position: absolute;
+      top: 1.5rem;
+      right: .5rem;
+      transform: rotate(-90deg);
+      
+      transition: transform .3s ease-in-out;
     }
   }
 
@@ -54,6 +68,8 @@
     
     .tabs__title {
       color: $yellow-base;
+
+      &::after {transform: rotate(0deg);}
     } 
 
     .tabs__panel {
