@@ -37,7 +37,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-right: 0;
+        transform: translateX(15px);
     }
     &__hamburger-bars,
     &__hamburger-bars::before,
@@ -52,6 +52,8 @@
         left: 0;
         z-index: z-index(overlay);
 
+        display: grid;
+
         width: 100vw;
         height: 100vh;
         padding: 3rem;
@@ -60,7 +62,6 @@
         text-align: center;
 
         background-color: rgba(0, 0, 0, 0.9);
-        line-height: 2.5;
 
         transform: scale(.8);
         visibility: hidden;
@@ -85,7 +86,7 @@
             left: initial;
             height: initial;
             padding: 0;
-            width: 50%;
+            width: 55%;
             
             transform: initial;
             visibility: initial;
@@ -97,6 +98,18 @@
         }
 
 
+        &-top,
+        &-bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            @include media('>=tablet') {
+                flex-direction: initial;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
 
         &-top {
             font-size: $menu-top-size;
@@ -117,6 +130,11 @@
                 justify-content: flex-end;
             }
 
+            @include media('<tablet') {
+                li:first-child {
+                    line-height: 1.7;    
+                }
+            }
 
             a {
                 --size-ml: 0;

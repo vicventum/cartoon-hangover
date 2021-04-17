@@ -1,10 +1,10 @@
 {
   "name": "Cartoon-Hangover-Clon",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "init": "parcel src/*.html",
+    "init": "parcel src/**/index.html",
     "save-dev": "npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/plugin-transform-runtime sass postcss-modules autoprefixer cssnano",
     "save": "npm install --save @babel/runtime core-js include-media hamburgers",
     "build": "parcel build ./src/index.html --out-dir docs",

@@ -1,6 +1,6 @@
 .galery-shows {
     &__title {
-        font-size: $shows-size;
+        font-size: 1.6rem;
         text-transform: uppercase;
 
         &::after {
@@ -8,6 +8,10 @@
             display: block;
             height: 3px;
             background-color: $red-base;
+        }
+
+        @include media('>=phone'){
+            font-size: $shows-size;            
         }
     }
 }
