@@ -7,17 +7,26 @@
     @return map-get($z-index, $val);
 }
      
-// Mixin para media querys
-@mixin mq($bp) {
-    @if map-has-key($breakpoints, $bp){
-        @media screen and (min-width: map-get($breakpoints, $bp)){
-            @content;
-        }
-    }@else {
-        @media screen and (min-width: $bp){
-            @content;
+%custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--yellow-base);
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+   
+        
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+   
+        
+    &::-webkit-scrollbar-thumb {
+        background-color: transparentize($yellow-base, .2);
+        transition: background-color .2s ease-in-out;
+        // border-radius: 25px;
+        &:hover {
+            background-color: var(--yellow-base);
         }
     }
 }
-// @include mq(l){...}
-// @include mq(500px){...}

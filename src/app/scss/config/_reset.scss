@@ -3,6 +3,7 @@
 // Importar iconos
 // @import url("https://file.myfontastic.com/CtJ7M0B6DyxJKbZveWPadP/icons.css");
 
+// @import "../helpers/utilities";
 /********************* RESET *********************/
 html {
     box-sizing: border-box;
@@ -29,6 +30,8 @@ body {
     line-height: $line-height;
     color: $light;
     background-color: $dark;
+
+    @extend %custom-scrollbar;
 }
 
 h1, h2, h3, h4 {

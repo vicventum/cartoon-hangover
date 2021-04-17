@@ -82,17 +82,18 @@ $breakpoints: (
 }
 
 // Pasando a variables de Sass
-$red-base: var(--red-base);
-$red-dark: var(--red-dark);
-$yellow-base: var(--yellow-base);
-$yellow-dark: var(--yellow-dark);
-$purple-base: var(--purple-base);
-$purple-light: var(--purple-light);
-$purple-dark: var(--purple-dark);
-$light: var(--light);
-$gray: var(--gray);
-$gray-dark: var(--gray-dark);
-$dark: var(--dark);
+$red-base: #ed2225;
+$red-dark: rgba(237, 34, 37, 0.75);
+$yellow-base: #fff100;
+$yellow-dark: #fff100;
+$purple-base: #92278f;
+$purple-light: hsl(302, 40%, 60%);
+$purple-dark: rgba(146, 39, 143, 0.75);
+$light: rgb(241, 241, 241);
+$gray: rgb(71, 71, 71);
+$gray-dark: rgb(44, 44, 44);
+$dark: #000;
+$second-dark: #111111;
 
 $title-font: var(--title-font);
 $body-font: var(--body-font);
