@@ -72,6 +72,8 @@
         transition-timing-function: ease-in-out;
 
         a {
+            width: 100%;
+            display: inline-block;
             font-weight: $fw-bold;
             letter-spacing: 4px;
 

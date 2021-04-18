@@ -3,6 +3,6 @@
 
 // Import JavaScript
 import "./app/js/headerHeight";
-import "./app/vendor/hamburger-config";
+import "./app/js/config/hamburger-config";
 import "./app/js/config/barba-config";
 import "./app/js/tabs";

@@ -7,5 +7,7 @@ export const $id = document.getElementById.bind(document),
   tabs = $id('tabs'),
   header = $id('header'),
   hamburger = $id('iconHamburger'),
-  links = $all('.nav__link'),
+  links = $all('.header__nav a'),
   menu = $id('menu')
+
+  console.log(links)
