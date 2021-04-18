@@ -6,12 +6,13 @@
     color: $dark;
     text-align: center;
 
-    transform: scaleX(.9);
+    // Para evitar la separación entre las transiciones
+    // transform: scaleX(.9);
     &-container {
-        width: 100%;
-        // Para evitar la separación entre las transiciones
-        transform-origin: center;
-        transform: scaleX(1.1);
+        width: 105%;
+        margin-left: -2.5;
+        // transform-origin: center;
+        // transform: scaleX(1.1);
     }
 
     &__icons {
