@@ -60,7 +60,7 @@ $breakpoints: (
 
 
     --max-width: 120rem;
-    --header-height: 5rem;
+    // --header-height: 5rem;
 
 
     --logo-width: 14rem;
@@ -80,8 +80,9 @@ $breakpoints: (
     --h2: var(--title-size);
     --h3: 2.0rem;
 
-    // --bezier-curve: cubic-bezier(0.65, 0.05, 0.35, 1)
-    --bezier-curve: cubic-bezier(0.4, 0, 0.2, 1.01)
+    --bezier-curve: cubic-bezier(0.65, 0.05, 0.35, 1);
+    // --bezier-curve: cubic-bezier(0.4, 0, 0.2, 1.01)
+    --header-height: 92.9219px;
 }
 
 // Pasando a variables de Sass
