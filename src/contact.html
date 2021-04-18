@@ -10,7 +10,7 @@
   <link rel="icon" type="img/png" sizes="32x32" href="./img/favicon.png">
 
   <!-- FONT AWESOME -->
-  
+
   <!-- HAMBURGER CSS -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"> -->
 
@@ -20,47 +20,48 @@
 
 <body data-barba="wrapper" id="body">
 
+  <!-- HEADER -->
+  <header id="header" class="header
+    v-flex j-content-between ">
+    <!-- Logo -->
+    <a class=" header__logo
+        " href="index.html">
+      <img class="" src="img/logo-menu.png" alt="Cartoon Hangover Logo">
+    </a>
+    <!-- Hamburger Icon -->
+    <button id="iconHamburger" class="header__hamburger hamburger hamburger--collapse u-hide-for-desktop" type="button">
+      <span class="hamburger-box">
+        <span class="header__hamburger-bars hamburger-inner"></span>
+      </span>
+    </button>
+    <!-- Navigation -->
+    <nav class="header__nav
+      ">
+      <ul class="header__nav-top
+          t:v-flex">
+        <li><a class="u-hide-for-desktop" href="index.html">HOME</a></li>
+        <li><a href="shows.html">SHOWS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html" class="u-active">CONTACT</a></li>
+        <!-- <li><a href="#">CONTESTS</a></li> -->
+        <li><a href="merch.html">MERCH</a></li>
+      </ul>
+      <ul class="header__nav-bottom
+          t:v-flex ">
+        <li>
+          <a href="mailing-list.html">JOIN THE MAILING LIST <i class="icon-mail"></i></a>
+        </li>
+        <!-- <li><a>PRESS</a></li>
+          <li><a>PITCH</a></li> -->
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="jobs.html">JOBS</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <!-- BARBA CONTAINER -->
   <div data-barba="container">
 
-    <!-- HEADER -->
-    <header id="header" class="header
-    v-flex j-content-between ">
-      <!-- Logo -->
-      <a class=" header__logo
-        " href="index.html">
-        <img class="" src="img/logo-menu.png" alt="Cartoon Hangover Logo">
-      </a>
-      <!-- Hamburger Icon -->
-      <button id="iconHamburger" class="header__hamburger hamburger hamburger--collapse u-hide-for-desktop" type="button">
-        <span class="hamburger-box">
-          <span class="header__hamburger-bars hamburger-inner"></span>
-        </span>
-      </button>
-      <!-- Navigation -->
-      <nav class="header__nav
-      ">
-        <ul class="header__nav-top
-          t:v-flex">
-          <li><a class="u-hide-for-desktop" href="index.html">HOME</a></li>
-          <li><a href="shows.html">SHOWS</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="contact.html" class="u-active">CONTACT</a></li>
-          <!-- <li><a href="#">CONTESTS</a></li> -->
-          <li><a href="merch.html">MERCH</a></li>
-        </ul>
-        <ul class="header__nav-bottom
-          t:v-flex ">
-          <li>
-            <a href="mailing-list.html">JOIN THE MAILING LIST <i class="icon-mail"></i></a>
-          </li>
-          <!-- <li><a>PRESS</a></li>
-          <li><a>PITCH</a></li> -->
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="jobs.html">JOBS</a></li>
-        </ul>
-      </nav>
-    </header>
     <!-- BANNER SOCIAL -->
     <div class="banner-container u-bg--yellow">
       <section class="banner-social banner
@@ -177,7 +178,7 @@
         t:grid-cols-3">
         <article class="col-space-2  col-span-2  t:col-span-1">
           <h2>Where Are We</h2>
-          <p><strong>Email:</strong> <a >hey@frederator.com</a></p>
+          <p><strong>Email:</strong> <a>hey@frederator.com</a></p>
           <p><strong>Web:</strong>
             <a href="#">www.frederator.com</a>
             <a href="#">www.channelfrederator.com</a>
@@ -279,15 +280,15 @@
 
         <ul>
           <li><a href="index.html">Home</a></li>
-                    <li><a href="shows.html">Shows</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <!-- <li><a href="#">Pitch</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="about.html">About</a></li>
+          <!-- <li><a href="#">Pitch</a></li>
                     <li><a href="#">Contests</a></li> -->
-                    <li><a href="merch.html">Merchandise</a></li>
-                    <li><a href="mailing-list.html">Mailing List</a></li>
-                    <li><a href="jobs.html">Jobs</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+          <li><a href="merch.html">Merchandise</a></li>
+          <li><a href="mailing-list.html">Mailing List</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
 
@@ -330,7 +331,7 @@
       <p>©2019 Frederator Networks, Inc.</p>
       <p>A WOW! Unlimited Media Company. ALL RIGHTS RESERVED.</p>
       <p class="credits-footer__love">Frederator and Victor Loves You.</p>
-      <p class="credits-footer__dev-by">Developed by <a href="https://vicventum.web.app" target="_blank" ><strong>Victor
+      <p class="credits-footer__dev-by">Developed by <a href="https://vicventum.web.app" target="_blank"><strong>Victor
             Alvarez</strong></a></p>
     </section>
   </footer>
