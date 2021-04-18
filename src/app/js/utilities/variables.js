@@ -9,5 +9,3 @@ export const $id = document.getElementById.bind(document),
   hamburger = $id('iconHamburger'),
   links = $all('.header__nav a'),
   menu = $id('menu')
-
-  console.log(links)

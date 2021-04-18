@@ -19,8 +19,6 @@ export default function activeTabs() {
       else if (e.target.parentElement.classList.contains('tabs__item'))
         item = e.target.parentElement
   
-      console.log(item.children);
-  
       // Guardando el item
       if (item) {
         currentItem = {
