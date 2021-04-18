@@ -1,8 +1,24 @@
 import barba from "../../vendor/barba/barba.min"
 import barbaCss from "../../vendor/barba/barba-css.umd"
-import activeTabs from "../tabs";
+import activeTabs from "../tabs"
+import { $class } from "../utilities/variables"
 
 barba.use(barbaCss)
+
+barba.hooks.beforeOnce(({ next }) => activateLink(next))
+barba.hooks.beforeEnter(({ next }) => activateLink(next))
+barba.hooks.beforeLeave(({ current }) => desactivateLink(current))
+
+function activateLink(next) {
+  const id = next.url.path
+  const activeLink = $class(`[href="${id}"]`)
+  activeLink.classList.add('u-active') 
+}
+function desactivateLink(current) {
+  const id = current.url.path
+  const activeLink = $class(`[href="${id}"]`)
+  activeLink.classList.remove('u-active') 
+}
 
 barba.init({
   preventRunning: true,
@@ -18,22 +34,22 @@ barba.init({
     }
   ],
   transitions: [
-      {
-        name: 'general',
-        sync: true,
-        once() {},
-        leave() {},
-        enter() {},
+    {
+      name: 'general',
+      sync: true,
+      once() { },
+      leave() { },
+      enter() { },
+    },
+    {
+      name: 'home',
+      sync: true,
+      to: {
+        namespace: ['home']
       },
-       {
-        name: 'home',
-        sync: true,
-        to: {
-          namespace: ['home']
-        },
-        once() {},
-        leave() {},
-        enter() {},
-      }
-    ]
-  })
+      once() { },
+      leave() { },
+      enter() { },
+    }
+  ]
+})

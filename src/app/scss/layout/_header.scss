@@ -76,8 +76,13 @@
             display: inline-block;
             font-weight: $fw-bold;
             letter-spacing: 4px;
-
+            
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: ease-in-out;
+            
             @include media('>=tablet') {
+                width: initial;
                 letter-spacing: initial;
             }    
         }
