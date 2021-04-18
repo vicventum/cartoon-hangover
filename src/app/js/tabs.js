@@ -8,7 +8,7 @@ let prevItem = null,
 
 if (tabs !== null) {
   tabs.addEventListener('click', e => {
-    console.log('owo');
+    
     let item = null
     if (e.target.classList.contains('tabs__item'))
       item = e.target
