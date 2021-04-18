@@ -5,19 +5,17 @@ import { $class } from "../utilities/variables"
 
 barba.use(barbaCss)
 
-barba.hooks.beforeOnce(({ next }) => activateLink(next))
-barba.hooks.beforeEnter(({ next }) => activateLink(next))
-barba.hooks.beforeLeave(({ current }) => desactivateLink(current))
+barba.hooks.beforeOnce(({ next }) => manageLink(next, true))
+barba.hooks.beforeEnter(({ next }) => manageLink(next, true))
+barba.hooks.beforeLeave(({ current }) => manageLink(current, false))
 
-function activateLink(next) {
-  const id = next.url.path
+function manageLink(element, mode) {
+  const id = element.url.path
   const activeLink = $class(`[href="${id}"]`)
-  activeLink.classList.add('u-active') 
-}
-function desactivateLink(current) {
-  const id = current.url.path
-  const activeLink = $class(`[href="${id}"]`)
-  activeLink.classList.remove('u-active') 
+  
+  mode
+    ? activeLink.classList.add('u-active') 
+    : activeLink.classList.remove('u-active') 
 }
 
 barba.init({
