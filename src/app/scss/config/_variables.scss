@@ -79,6 +79,9 @@ $breakpoints: (
     --h1: 3.2rem;
     --h2: var(--title-size);
     --h3: 2.0rem;
+
+    // --bezier-curve: cubic-bezier(0.65, 0.05, 0.35, 1)
+    --bezier-curve: cubic-bezier(0.4, 0, 0.2, 1.01)
 }
 
 // Pasando a variables de Sass

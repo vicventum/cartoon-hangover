@@ -12,6 +12,9 @@
 @import "../vendor/v-grid.min.css";
 @import "../vendor/fontello/fontello.css";
 
+// animations
+@import "animations/general.sass";
+@import "animations/home.sass";
 
 // helpers
 @import "helpers/mixins";

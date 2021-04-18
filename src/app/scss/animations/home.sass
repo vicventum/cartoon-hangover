@@ -1,0 +1,43 @@
+/* Page load animation */
+.home-once
+    opacity: 0
+
+    // When the transition happen
+    &-active
+        transition: opacity 1s linear .3s
+
+    // When the transition end's
+    &-to
+        opacity: 1
+/* Slide to home */
+// La transición cuando se va la página anterior
+.home-leave 
+    transform: translateX(0vw) 
+
+    // When the transition happen
+    &-active
+        width: calc(100vw - 10px)
+        transition: transform 1s cubic-bezier(0.68,-0.55, 0.26, 1.59)
+
+    // When the transition end's
+    &-to
+        transform: translateX(100vw)
+
+// La transición cuando entra la página actual
+.home-enter 
+    transform: translateX(-100vw)
+
+    // When the transition happen
+    &-active
+        width: calc(100vw - 10px)
+        transition: transform 1s cubic-bezier(0.68,-0.55, 0.26, 1.59)
+        position: absolute
+        top: 0
+        left: 0
+        background: black 
+        z-index: 9999
+
+    // When the transition end's
+    &-to
+        // Para que la pagina entrante se posicione de manera absoluta
+        transform: translateX(0)
