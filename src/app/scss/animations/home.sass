@@ -16,8 +16,8 @@
 
     // When the transition happen
     &-active
-        width: calc(100vw - 10px)
-        transition: transform 1s cubic-bezier(0.68,-0.55, 0.26, 1.59)
+        width: 100vw
+        transition: transform 1s var(--bezier-curve)
 
     // When the transition end's
     &-to
@@ -29,8 +29,8 @@
 
     // When the transition happen
     &-active
-        width: calc(100vw - 10px)
-        transition: transform 1s cubic-bezier(0.68,-0.55, 0.26, 1.59)
+        width: 100vw
+        transition: transform 1s var(--bezier-curve)
         position: absolute
         top: var(--header-height)
         left: 0

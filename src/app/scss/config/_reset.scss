@@ -9,7 +9,12 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
+    
+    // Evita desbordamientos a los lados
     overflow-x: hidden;
+    // TODO: Coloca la scrollbar por encima del contenido
+    overflow-y: overlay;
+
     // font-family: $title-font;
     // background-color: $dark;
     // line-height: $line-height;
