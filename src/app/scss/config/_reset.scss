@@ -12,15 +12,20 @@ html {
     
     // Evita desbordamientos a los lados
     overflow-x: hidden;
-    // TODO: Coloca la scrollbar por encima del contenido
-    overflow-y: overlay;
+    @include media('>=laptop'){
+        // TODO: Coloca la scrollbar por encima del contenido
+        overflow-y: overlay;
+    }
 
     // font-family: $title-font;
     // background-color: $dark;
     // line-height: $line-height;
     // color: $light;
 }
-
+[data-barba="container"] {
+    // Evita desbordamientos por parte del banner
+    overflow-x: hidden !important;
+}
 *,
 *::after,
 *::before {
@@ -36,6 +41,7 @@ body {
     line-height: $line-height;
     color: $light;
     background-color: $dark;
+    overflow-x: hidden;
 
     @extend %custom-scrollbar;
 }

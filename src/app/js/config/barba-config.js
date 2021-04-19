@@ -1,11 +1,12 @@
 // import barba from "../../vendor/barba/barba.min"
 // import barbaCss from "../../vendor/barba/barba-css.umd"
 import activeTabs from "../tabs"
-import { $class } from "../utilities/variables"
+import { $class, $id, rootStyles } from "../utilities/variables"
 
 barba.use(barbaCss)
 
-barba.hooks.beforeOnce(({ next }) => manageLink(next, true))
+barba.hooks.beforeOnce(({ next }) =>  manageLink(next, true))
+// barba.hooks.afterOnce(({ next }) =>  next.container.style.overflowX = 'hidden')
 barba.hooks.beforeEnter(({ next }) => manageLink(next, true))
 barba.hooks.beforeLeave(({ current }) => manageLink(current, false))
 
@@ -19,6 +20,7 @@ function manageLink(element, mode) {
 }
 
 barba.init({
+  debug: true,
   preventRunning: true,
   timeout: 5000,
   // Las 'views' son donde se colocará el código que no tiene que ver con las animaciones, pero que se quiere que se ejecute antes o después de las transiciones de cada página en específico.
@@ -27,7 +29,7 @@ barba.init({
     {
       namespace: 'faq',
       beforeEnter() {
-        activeTabs()
+        activeTabs(rootStyles, $id)
       },
     }
   ],

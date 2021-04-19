@@ -1,9 +1,5 @@
-import {
-  rootStyles,
-  $id
-} from "./utilities/variables";
-
-export default function activeTabs() {
+// TODO: Al ser una función exportada es encesario pasarle los valores que usará como parámetro y no importarlos desde fuera, sino dará error en el bundler de producción
+export default function activeTabs(rootStyles, $id) {
   
   let prevItem = null,
     currentItem = null

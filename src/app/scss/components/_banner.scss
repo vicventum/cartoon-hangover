@@ -10,7 +10,8 @@
     // transform: scaleX(.9);
     &-container {
         width: 105%;
-        margin-left: -2.5;
+        margin-left: -2.5%;
+        overflow: hidden;
         // transform-origin: center;
         // transform: scaleX(1.1);
     }
