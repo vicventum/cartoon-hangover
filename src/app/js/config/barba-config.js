@@ -1,5 +1,5 @@
-import barba from "../../vendor/barba/barba.min"
-import barbaCss from "../../vendor/barba/barba-css.umd"
+// import barba from "../../vendor/barba/barba.min"
+// import barbaCss from "../../vendor/barba/barba-css.umd"
 import activeTabs from "../tabs"
 import { $class } from "../utilities/variables"
 
@@ -11,7 +11,7 @@ barba.hooks.beforeLeave(({ current }) => manageLink(current, false))
 
 function manageLink(element, mode) {
   const id = element.url.path
-  const activeLink = $class(`[href="${id}"]`)
+  const activeLink = $class(`[href*='${id.match(/(?!.*\/).*/)[0]}']`)
   
   mode
     ? activeLink.classList.add('u-active') 

@@ -9,7 +9,7 @@
     "save": "npm install --save @babel/runtime core-js include-media hamburgers",
     "build": "parcel build ./src/index.html --out-dir docs",
     "deploy": "firebase deploy",
-    "compress": "purgecss --css docs/main.49a510ba.css --content docs/*.html docs/*.js -o docs/main.49a510ba.css",
+    "compress": "purgecss --css docs/main.d63db57b.css --content docs/*.html docs/*.js -o docs/main.d63db57b.css",
     "compress_v-grid": "purgecss --css docs/v-grid.min.css --content docs/*.html docs/*.js -o docs/v-grid.compress.css"
   },
   "keywords": [
